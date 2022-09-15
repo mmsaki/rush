@@ -33,7 +33,7 @@
     - Calculate the profitability of liquidating loans vs gas costs
     - Ensure we have access toe the latest protocol user data
     - Fail safe security 
-- Optimism Cahin
+- Optimism Chain
     - [Aave Optimism](https://docs.aave.com/risk/asset-risk/optimism)
 
 ## Project Roadmap
@@ -42,7 +42,7 @@
     - [Loan Flippa](https://ethglobal.com/showcase/loan-flippa-8s2mf)
 - [ ] Checkin #1
 - [x] Create Logo
-- [ ] Create Discord
+- [x] Create Discord
 - [x] Submit Checkin #2 
 - [ ] Project feedback Session Thu, Sep 15 02:00 PM
 - [ ] Create Presentation Sun, Sep 18 11:00 AM
