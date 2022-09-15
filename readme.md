@@ -16,7 +16,7 @@
 
 ## Long Description
 
-- The app uses vote escrowed **yearn vaults** that rely on automate liquiditating **strategies** to bring returns. The strategies is to use **flashloans** to liquidate positions from outstanding debts on aave. 
+- The app uses vote escrowed **yearn vaults** that rely on automate liquiditating **strategies** to bring returns. The strategies is to use **flashloans** to liquidate positions from outstanding debts on aave. We also want to use **Curve Finance** pools to be able to do stable coin swapping at a better rate.
 
 ## How It's Made
 *Tell us about how you built this project; the nitty-gritty details. What technologies did you use? How are they pieced together? If you used sponsor technology how did it benefit your project? Did you do anything particuarly hacky that's notable and worth mentioning? How did you impress yourself which what your team built?*
@@ -33,7 +33,7 @@
     - Calculate the profitability of liquidating loans vs gas costs
     - Ensure we have access toe the latest protocol user data
     - Fail safe security 
-- Optimism Chain
+- Aave contracts and registry on Optimism 
     - [Aave Optimism](https://docs.aave.com/risk/asset-risk/optimism)
 
 ## Project Roadmap
