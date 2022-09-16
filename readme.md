@@ -30,6 +30,8 @@
     - `Approve` **spender**
     - `executeOperation` on receiver contract
 
+![](./flippa-loans.gif)
+
 - Earning Flash loan fee
     - The flash loan fee is **initialized at deployment** to `0.09%` and can be updated via Governance Vote. Use `FLASHLOAN_PREMIUM_TOTA`L to get current value.
     - Flashloan fee can be shared by the LPs (liquidity providers) and the **protocol treasury**. The `FLASHLOAN_PREMIUM_TOTAL` represents the total fee paid by the borrowers of which:
@@ -43,6 +45,7 @@
     - Fail safe security 
 - Aave contracts and registry on Optimism 
     - [V3 Testnet Aave Address on Optimism Görli](https://docs.aave.com/developers/deployed-contracts/v3-testnet-addresses)
+
 
 ## Project Roadmap
 
