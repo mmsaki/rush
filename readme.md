@@ -12,23 +12,29 @@
 - [**Loan Flipper**](https://github.com/mmsaki/eth-online-2022)
 
 ## Short Description
-- Loan Flippa is a service that interacts with **Aave  v3 Lending pools** to supply and borrow assets using its flashloan contracts.
+- **Loan Flippa** is a service that interacts with **Aave  v3 Lending pools** to supply and borrow assets using its **flashloan contracts**.
 
 ## Long Description
 
-- Defi users should rely on simple tools to trade their assets. Sometimes trading assests can cause major shifts in prices. Defi users who borrow assets are sometimes forced to liquiditate automatically to pay off their debt. Flippa Flashloans provides an easy way to  liquidate positions from outstanding debts on aave. We also want common Defi users without any technical backgrounds to use flashloans when they need to. We want to offer stability with volatile assest swapping, and debt payoff with a better rates without incurring maximum losses.
+- Defi users should rely on simple tools to trade their assets. Sometimes trading assests can cause major shifts in prices. Defi users who **borrow assets** are sometimes forced to **liquiditate automatically** to pay off their debt. This can lead to **max losses**. Flippa Flashloans provides an easy way to  liquidate positions from outstanding **debts on aave**. We also want common Defi users without any technical backgrounds to use flashloans when they need to. We want to offer **stability** with **volatile assest swapping**, and debt payoff with a **better rates** without incurring maximum losses.
 
 ## How It's Made
 *Tell us about how you built this project; the nitty-gritty details. What technologies did you use? How are they pieced together? If you used sponsor technology how did it benefit your project? Did you do anything particuarly hacky that's notable and worth mentioning? How did you impress yourself which what your team built?*
 
 - How to use our Flippa Flashloan Contracts on this project
-    - You need to use Optimism Goerli Testnet
-    - Get weth by swapping ETH for WETH 
-    - Deposit WETH into aave to receive aWETH tokens
-    - Deploy FlashloanAttacker contract
-    - SupplyAssest to weth pool address
-    - Approve spender
-    - Execute flashloan
+    - You need to use **Optimism Goerli Testnet**
+    - Get weth by swapping ETH for **WETH** 
+    - Deposit WETH into aave to receive **aWETH tokens**
+    - Deploy `FlashloanAttacker` contract
+    - `SupplyAssest` to WETH **pool address**
+    - `Approve` **spender**
+    - `executeOperation` on receiver contract
+
+- Flash loan fee
+    - The flash loan fee is **initialized at deployment** to `0.09%` and can be updated via Governance Vote. Use `FLASHLOAN_PREMIUM_TOTA`L to get current value.
+    - Flashloan fee can be shared by the LPs (liquidity providers) and the **protocol treasury**. The `FLASHLOAN_PREMIUM_TOTAL` represents the total fee paid by the borrowers of which:
+        - Fee to LP: `FLASHLOAN_PREMIUM_TOTAL - FLASHLOAN_PREMIUM_TO_PROTOCOL`
+        - Fee to Protocol: `FLASHLOAN_PREMIUM_TO_PROTOCOL`
 
 - Setting Up
     - Ensure we have enough funds when liquidating
