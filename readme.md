@@ -49,9 +49,13 @@
 - [x] Create Project 
     - [Loan Flippa](https://ethglobal.com/showcase/loan-flippa-8s2mf)
 - [ ] Checkin #1
+    - Update: We Missed checkin #1
 - [x] Create Logo
+    - [flippa logo](./logo.jpg)
 - [x] Create Discord
+    - [Discord](https://discord.gg/57TA3bHx62)
 - [x] Submit Checkin #2 
+    - Update: Done
 - [ ] Create test scripts
 - [ ] Project feedback Session Thu, Sep 15 02:00 PM
 - [ ] Create Presentation Sun, Sep 18 11:00 AM
