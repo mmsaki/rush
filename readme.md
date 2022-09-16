@@ -12,29 +12,31 @@
 - [**Loan Flipper**](https://github.com/mmsaki/eth-online-2022)
 
 ## Short Description
-- Loan Flippa allows users to make returns from **Aave liquidating strategies** on outstanding debt.
+- Loan Flippa is a service that interacts with **Aave  v3 Lending pools** to supply and borrow assets using its flashloan contracts.
 
 ## Long Description
 
-- The app uses vote escrowed **yearn vaults** that rely on automate liquiditating **strategies** to bring returns. The strategies is to use **flashloans** to liquidate positions from outstanding debts on aave. We also want to use **Curve Finance** pools to be able to do stable coin swapping at a better rate.
+- Defi users should rely on simple tools to trade their assets. Sometimes trading assests can cause major shifts in prices. Defi users who borrow assets are sometimes forced to liquiditate automatically to pay off their debt. Flippa Flashloans provides an easy way to  liquidate positions from outstanding debts on aave. We also want common Defi users without any technical backgrounds to use flashloans when they need to. We want to offer stability with volatile assest swapping, and debt payoff with a better rates without incurring maximum losses.
 
 ## How It's Made
 *Tell us about how you built this project; the nitty-gritty details. What technologies did you use? How are they pieced together? If you used sponsor technology how did it benefit your project? Did you do anything particuarly hacky that's notable and worth mentioning? How did you impress yourself which what your team built?*
-- Project Resources
-    - [Brownie Bake React Mix](https://github.com/brownie-mix/react-mix)
-    - [Aave Flashloan Mix](https://github.com/brownie-mix/aave-flashloan-mix)
-    - [Example by Mikespa](https://github.com/MikeSpa/defi-project)
-    - [Aave Flash Loan docs](https://docs.aave.com/developers/v/1.0/tutorials/performing-a-flash-loan)
-    - [Aave Liquidating](https://docs.aave.com/developers/v/1.0/tutorials/liquidations)
-    - [Macarena frontend template](https://github.com/yearn/macarena-finance)
 
-- Setting up stategy/bot
+- How to use our Flippa Flashloan Contracts on this project
+    - You need to use Optimism Goerli Testnet
+    - Get weth by swapping ETH for WETH 
+    - Deposit WETH into aave to receive aWETH tokens
+    - Deploy FlashloanAttacker contract
+    - SupplyAssest to weth pool address
+    - Approve spender
+    - Execute flashloan
+
+- Setting Up
     - Ensure we have enough funds when liquidating
     - Calculate the profitability of liquidating loans vs gas costs
     - Ensure we have access toe the latest protocol user data
     - Fail safe security 
 - Aave contracts and registry on Optimism 
-    - [Aave Optimism](https://docs.aave.com/risk/asset-risk/optimism)
+    - [V3 Testnet Aave Address on Optimism Görli](https://docs.aave.com/developers/deployed-contracts/v3-testnet-addresses)
 
 ## Project Roadmap
 
@@ -44,6 +46,7 @@
 - [x] Create Logo
 - [x] Create Discord
 - [x] Submit Checkin #2 
+- [ ] Create test scripts
 - [ ] Project feedback Session Thu, Sep 15 02:00 PM
 - [ ] Create Presentation Sun, Sep 18 11:00 AM
 - [ ] Create Live Demo URL Mon Sep 19 11:00 AM
