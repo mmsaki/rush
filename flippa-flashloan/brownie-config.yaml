@@ -7,29 +7,47 @@ project_structure:
   tests: tests
 
 compiler:
+  evm_version: null
   solc:
     version: null
+    optimizer:
+      enabled: true
+      runs: 200
     remappings:
       - "@openzeppelin=OpenZeppelin/openzeppelin-contracts@3.0.0"
+      # - "@aave-protocol/=lib/aave-v3-core/contracts"
+      # - "@uniswap-v3-periphery/=lib/v3-periphery/contracts"
+      # - "@uniswap-v3-core/=lib/v3-core/contracts"
+      # - "@openzeppelin-contracts/=lib/openzeppelin-contracts/contracts"
+      # - "@superfluid-finance/=lib/protocol-monorepo/packages"
+      # - "@uniswap/v3-core/contracts/=lib/v3-core/contracts"
+
+  vyper:
+      version: null
 
 console:
   show_colors: true
-  color_style: default
+  color_style: monokai
   auto_suggest: true
   completions: true
   editing_mode: emacs
 
 networks:
-  default: ethereum-fork
-  development:
-    verify: False
-  mainnet-fork:
-    aave_lending_pool_v2: '0xB53C1a33016B2DC2fF3653530bfF1848a515c8c5'
-    weth: '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2'
-    dai_eth_price_feed: '0x773616E4d11A78F511299002da57A0a94577F1f4'
+  default: optimism-goerli
   mainnet:
     aave_lending_pool_v2: '0xB53C1a33016B2DC2fF3653530bfF1848a515c8c5'
     weth: '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2'
+    dai_eth_price_feed: '0x773616E4d11A78F511299002da57A0a94577F1f4'
+  development:
+    verify: False
+    gas_limit: max
+    gas_buffer: 1
+    gas_price: 0
+    max_fee: null
+    priority_fee: null
+    reverting_tx_gas_limit: max
+    default_contract_owner: true
+    cmd_settings: null
   optimism-goerli:
     verify: True
     AAVE-TestnetPriceAggregator-Optimistic: '0xdda6d35BaCc16f97F1CFc85A88DA47Bf06EC4695' 
@@ -113,7 +131,24 @@ networks:
     USDT-TestnetMintableERC20: '0x804ED52fed3876A50EdefA6e71FfA35d7b493882' 
     WBTC-TestnetMintableERC20: '0x532C90cB5bFC8E929409678224D6D420E25c4F37' 
     WETH-TestnetMintableERC20: '0x09bADef78f92F20fd5f7a402dbb1d25d4901aAb2'
-    
+
+reports:
+  exclude_paths: null
+  exclude_contracts: null
+  only_include_project: true
+
+hypothesis:
+  deadline: null
+  max_examples: 50
+  report_multiple_bugs: False
+  stateful_step_count: 10
+  phases:
+    explicit: true
+    reuse: true
+    generate: true
+    target: true
+    shrink: true
+
 dotenv:
   .env
 
