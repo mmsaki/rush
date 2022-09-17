@@ -12,11 +12,11 @@
 - [**Loan Flipper**](https://github.com/mmsaki/eth-online-2022)
 
 ## Short Description
-- **Loan Flippa** is a service that interacts with **Aave  v3 Lending pools** to supply and borrow assets using its **flashloan contracts**.
+- **Loan flippa** makes it easy for Defi users to **swap and liquidate** assets using flashloans.
 
 ## Long Description
 
-- Defi users should rely on simple tools to trade their assets. Sometimes trading assests can cause major shifts in prices. Defi users who **borrow assets** are sometimes forced to **liquiditate automatically** to pay off their debt. This can lead to **max losses**. Flippa Flashloans provides an easy way to  liquidate positions from outstanding **debts on aave**. We also want common Defi users without any technical backgrounds to use flashloans when they need to. We want to offer **stability** with **volatile assest swapping**, and debt payoff with a **better rates** without incurring maximum losses.
+- **Loan Flippa** is a service that interacts with **Aave  v3 Lending pools** to supply and borrow assets using its **flashloan contracts**.Defi users should rely on simple tools to trade their assets. Sometimes trading assests can cause major shifts in prices. Defi users who **borrow assets** are sometimes forced to **liquiditate automatically** to pay off their debt. This can lead to **max losses**. Flippa Flashloans provides an easy way to  liquidate positions from outstanding **debts on aave**. We also want common Defi users without any technical backgrounds to use flashloans when they need to. We want to offer **stability** with **volatile assest swapping**, and debt payoff with a **better rates** without incurring maximum losses.
 
 ## How It's Made
 *Tell us about how you built this project; the nitty-gritty details. What technologies did you use? How are they pieced together? If you used sponsor technology how did it benefit your project? Did you do anything particuarly hacky that's notable and worth mentioning? How did you impress yourself which what your team built?*
@@ -58,14 +58,29 @@
 - [x] Create Discord
     - [Discord](https://discord.gg/57TA3bHx62)
 - [x] Submit Checkin #2 
-    - Update: Done
+    - How is the project coming along?
 - [ ] Create test scripts
-- [ ] Project feedback Session Thu, Sep 15 02:00 PM
+- [x] Project feedback Session Thu, Sep 15 02:00 PM
 - [ ] Create Presentation Sun, Sep 18 11:00 AM
+    - Project Table of Contents
+    - Problem flippa is solving in Defi
+    - How to use Flippa
 - [ ] Create Live Demo URL Mon Sep 19 11:00 AM
+    - Front end landing page
+    - Users can connect metamask
+    - User can call deposit WETH function
+    - User can send flashloan
 - [ ] Project Check-in #3 Tue, Sep 20 11:00 AM
+    - Is everything going as expected
+    - What are some things you need help with
+    - What do you need to complete your project?
 - [ ] Project feedback Session Wed, Sep 21 02:00 PM
+    - Present project for feedback
 - [ ] ETHOnline Summit Fri, Sep 23 11:00 AM
+    - If ready submit project
+    - Record Video demonstration on how to use app
 - [ ] Submissions Due! Sun, Sep 25 02:00 PM
+    - Submit project by 2:00pm
 - [ ] Project Judging Mon, Sep 26 11:00 AM
+    - Present to judges and sponsors
  
