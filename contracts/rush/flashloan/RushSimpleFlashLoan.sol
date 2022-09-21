@@ -9,7 +9,7 @@ import {IPoolAddressesProvider} from '../../interfaces/IPoolAddressesProvider.so
 import {FlashLoanSimpleReceiverBase} from '../../flashloan/FlashLoanSimpleReceiverBase.sol';
 import {MintableERC20} from '../tokens/MintableERC20.sol';
 
-contract FlashLoanSimpleReceiver is FlashLoanSimpleReceiverBase {
+contract RushSimpleFlashLoan is FlashLoanSimpleReceiverBase {
   using GPv2SafeERC20 for IERC20;
   using SafeMath for uint256;
 

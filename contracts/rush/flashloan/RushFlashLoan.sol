@@ -7,7 +7,7 @@ import {IPoolAddressesProvider} from '../../interfaces/IPoolAddressesProvider.so
 import {FlashLoanReceiverBase} from '../../flashloan/FlashLoanReceiverBase.sol';
 import {MintableERC20} from '../tokens/MintableERC20.sol';
 
-contract FlashLoanReceiver is FlashLoanReceiverBase {
+contract RushFlashLoan is FlashLoanReceiverBase {
   using GPv2SafeERC20 for IERC20;
 
   event ExecutedWithFail(address[] _assets, uint256[] _amounts, uint256[] _premiums);

@@ -6,7 +6,7 @@ import {IPoolAddressesProvider} from '../../interfaces/IPoolAddressesProvider.so
 import {WadRayMath} from '../../protocol/libraries/math/WadRayMath.sol';
 import {DataTypes} from '../../protocol/libraries/types/DataTypes.sol';
 
-contract MockReserveInterestRateStrategy is IReserveInterestRateStrategy {
+contract RushReserveInterestRateStrategy is IReserveInterestRateStrategy {
   uint256 public immutable OPTIMAL_USAGE_RATIO;
   IPoolAddressesProvider public immutable ADDRESSES_PROVIDER;
   uint256 internal immutable _baseVariableBorrowRate;

@@ -3,7 +3,7 @@ pragma solidity 0.8.10;
 
 import {VersionedInitializable} from '../../protocol/libraries/aave-upgradeability/VersionedInitializable.sol';
 
-contract MockInitializableImple is VersionedInitializable {
+contract RushInitializableImple is VersionedInitializable {
   uint256 public value;
   string public text;
   uint256[] public values;
@@ -37,7 +37,7 @@ contract MockInitializableImple is VersionedInitializable {
   }
 }
 
-contract MockInitializableImpleV2 is VersionedInitializable {
+contract RushInitializableImpleV2 is VersionedInitializable {
   uint256 public value;
   string public text;
   uint256[] public values;
@@ -71,7 +71,7 @@ contract MockInitializableImpleV2 is VersionedInitializable {
   }
 }
 
-contract MockInitializableFromConstructorImple is VersionedInitializable {
+contract RushInitializableFromConstructorImple is VersionedInitializable {
   uint256 public value;
 
   uint256 public constant REVISION = 2;
@@ -93,7 +93,7 @@ contract MockInitializableFromConstructorImple is VersionedInitializable {
   }
 }
 
-contract MockReentrantInitializableImple is VersionedInitializable {
+contract RushReentrantInitializableImple is VersionedInitializable {
   uint256 public value;
 
   uint256 public constant REVISION = 2;

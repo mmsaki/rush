@@ -4,7 +4,7 @@ pragma solidity 0.8.10;
 import {ReserveConfiguration} from '../../protocol/libraries/configuration/ReserveConfiguration.sol';
 import {DataTypes} from '../../protocol/libraries/types/DataTypes.sol';
 
-contract MockReserveConfiguration {
+contract RushReserveConfiguration {
   using ReserveConfiguration for DataTypes.ReserveConfigurationMap;
 
   DataTypes.ReserveConfigurationMap public configuration;

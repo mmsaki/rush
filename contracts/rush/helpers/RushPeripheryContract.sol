@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: BUSL-1.1
 pragma solidity 0.8.10;
 
-contract MockPeripheryContractV1 {
+contract RushPeripheryContractV1 {
   address private _manager;
   uint256 private _value;
 
@@ -19,7 +19,7 @@ contract MockPeripheryContractV1 {
   }
 }
 
-contract MockPeripheryContractV2 {
+contract RushPeripheryContractV2 {
   address private _manager;
   uint256 private _value;
   address private _addressesProvider;

@@ -3,7 +3,7 @@ pragma solidity 0.8.10;
 
 import {IPoolAddressesProvider} from '../../interfaces/IPoolAddressesProvider.sol';
 
-contract MockPool {
+contract RushPool {
   // Reserved storage space to avoid layout collisions.
   uint256[100] private ______gap;
 
@@ -29,7 +29,7 @@ contract MockPool {
 
 import {Pool} from '../../protocol/pool/Pool.sol';
 
-contract MockPoolInherited is Pool {
+contract RushPoolInherited is Pool {
   uint16 internal _maxNumberOfReserves = 128;
 
   function getRevision() internal pure override returns (uint256) {

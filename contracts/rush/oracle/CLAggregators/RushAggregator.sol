@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: BUSL-1.1
 pragma solidity 0.8.10;
 
-contract MockAggregator {
+contract RushAggregator {
   int256 private _latestAnswer;
 
   event AnswerUpdated(int256 indexed current, uint256 indexed roundId, uint256 updatedAt);
