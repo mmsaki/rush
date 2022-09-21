@@ -33,7 +33,7 @@
 ![](./flippa-loans.gif)
 
 - Aave Flash loan fee
-    - The flash loan fee is **initialized at deployment** to `0.09%` and can be updated via Governance Vote. Use `FLASHLOAN_PREMIUM_TOTA`L to get current value.
+    - The flash loan fee is **initialized at deployment** to `0.09%` which is updated via aave Governance Vote. Use `FLASHLOAN_PREMIUM_TOTAL` to get current value.
     - Flashloan fee can be shared by the LPs (liquidity providers) and the **protocol treasury**. The `FLASHLOAN_PREMIUM_TOTAL` represents the total fee paid by the borrowers of which:
         - Fee to LP: `FLASHLOAN_PREMIUM_TOTAL - FLASHLOAN_PREMIUM_TO_PROTOCOL`
         - Fee to Protocol: `FLASHLOAN_PREMIUM_TO_PROTOCOL`
