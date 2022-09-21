@@ -1,6 +1,5 @@
 
-# Defi Loan Flippa
-![Flippa Logo](./logo.jpg)
+# Rush
 
 ## What Category does your project belong to?
 - **Defi**
@@ -9,19 +8,19 @@
 - **🧑‍🌾 🌾**
 
 ## GitHub Repository
-- [**Loan Flipper**](https://github.com/mmsaki/eth-online-2022)
+- [**Loan Rush**](https://github.com/mmsaki/eth-online-2022)
 
 ## Short Description
-- **Loan flippa** makes it easy for Defi users to **swap and liquidate** assets using flashloans.
+- **Loan Rush** makes it easy for Defi users to **swap and liquidate** assets using flashloans.
 
 ## Long Description
 
-- **Loan Flippa** is a service that interacts with **Aave  v3 Lending pools** to supply and borrow assets using its **flashloan contracts**.Defi users should rely on simple tools to trade their assets. Sometimes trading assests can cause major shifts in prices. Defi users who **borrow assets** are sometimes forced to **liquiditate automatically** to pay off their debt. This can lead to **max losses**. Flippa Flashloans provides an easy way to  liquidate positions from outstanding **debts on aave**. We also want common Defi users without any technical backgrounds to use flashloans when they need to. We want to offer **stability** with **volatile assest swapping**, and debt payoff with a **better rates** without incurring maximum losses.
+- **Loan Rush** is a service that interacts with **Aave  v3 Lending pools** to supply and borrow assets using its **flashloan contracts**.Defi users should rely on simple tools to trade their assets. Sometimes trading assests can cause major shifts in prices. Defi users who **borrow assets** are sometimes forced to **liquiditate automatically** to pay off their debt. This can lead to **max losses**. Rush Flashloans provides an easy way to  liquidate positions from outstanding **debts on aave**. We also want common Defi users without any technical backgrounds to use flashloans when they need to. We want to offer **stability** with **volatile assest swapping**, and debt payoff with a **better rates** without incurring maximum losses.
 
 ## How It's Made
 *Tell us about how you built this project; the nitty-gritty details. What technologies did you use? How are they pieced together? If you used sponsor technology how did it benefit your project? Did you do anything particuarly hacky that's notable and worth mentioning? How did you impress yourself which what your team built?*
 
-- How to use our Flippa Flashloan Contracts on this project
+- How to use our Rush Flashloan Contracts on this project
     - You need to use **Optimism Goerli Testnet**
     - Get weth by swapping ETH for **WETH** 
     - Deposit WETH into aave to receive **aWETH tokens**
@@ -30,7 +29,7 @@
     - `Approve` **spender**
     - `executeOperation` on receiver contract
 
-![](./flippa-loans.gif)
+![](./Rush-loans.gif)
 
 - Aave Flash loan fee
     - The flash loan fee is **initialized at deployment** to `0.09%` which is updated via aave Governance Vote. Use `FLASHLOAN_PREMIUM_TOTAL` to get current value.
@@ -50,11 +49,11 @@
 ## Project Roadmap
 
 - [x] Create Project 
-    - [Loan Flippa](https://ethglobal.com/showcase/loan-flippa-8s2mf)
+    - [Loan Rush]()
 - [ ] Checkin #1
     - Update: We Missed checkin #1
 - [x] Create Logo
-    - [flippa logo](./logo.jpg)
+    - [Rush logo](./logo.jpg)
 - [x] Create Discord
     - [Discord](https://discord.gg/57TA3bHx62)
 - [x] Submit Checkin #2 
@@ -63,8 +62,8 @@
 - [x] Project feedback Session Thu, Sep 15 02:00 PM
 - [ ] Create Presentation Sun, Sep 18 11:00 AM
     - Project Table of Contents
-    - Problem flippa is solving in Defi
-    - How to use Flippa
+    - Problem Rush is solving in Defi
+    - How to use Rush
 - [ ] Create Live Demo URL Mon Sep 19 11:00 AM
     - Front end landing page
     - Users can connect metamask
