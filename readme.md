@@ -27,7 +27,7 @@
             - For borrowing multiple tokens
         - `RushSimpleFlashLoan`
             - For borrowing a single token
-    - We supply liquidity to aave and received **aWETH tokens**
+    - We supply liquidity to aave and received **atokens**
     - We call `.flashloan( )` on the lendign pool contract
         - Our receiver will be the `RushFlashloan` contract we deployed
         - We can swap tokens by providing an array of token addresses and amounts.
