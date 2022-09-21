@@ -16,7 +16,7 @@
 
 ## Long Description
 
-- **Rush** is a service that interacts with **Aave  v3 Lending pools** to supply and borrow assets using its **flashloan contracts**. Defi users can rely on simple tools to trade borrow assets. Sometimes trading assests can cause major shifts in prices. Defi users who **borrow assets** are sometimes forced to **liquiditate automatically** to pay off their debt. This can lead to **max losses**. Rush Flashloans provides an easy way to  borrow positions from outstanding **collateral on aave**. We also want common Defi users without any technical backgrounds to use learn how to use flashloans without any complications. We want to offer **secure contracts** when borrowing assests. Any debt is paid off after a flashloan including a **flashloan premium fee**.
+- **Rush** is a service that interacts with **Aave v3 Core Lending pools** to supply and borrow assets using its **flashloan contracts**. Defi users can rely on simple tools to borrow crypto assets. Sometimes swapping assests can cause major shifts in prices. Defi users who **borrow assets** are sometimes forced to **liquiditation thresholds** to pay off outstanding debt. This can lead to **max losses** sometimes. Rush Flashloans provides an easy way to borrow positions from supplying **collateral on aave**. We also want all the Defi users without any technical backgrounds to learn how to use flashloans without complications. We want to offer **secure contracts** when borrowing assests. Flashloans allow users to **stay debt free**.Flashloans only cost you a **flashloan premium fee**.
 
 ## How It's Made
 
