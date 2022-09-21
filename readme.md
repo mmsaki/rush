@@ -62,18 +62,21 @@
     - [Discord](https://discord.gg/57TA3bHx62)
 - [x] Submit Checkin #2 
     - How is the project coming along?
-- [ ] Create test scripts
+- [x] Create scripts
+    - deploy_flashloan.py
+    - aave_balances.py
+    - run_flashloan.py
+    - simple_flashloan.py
+    - supply_token.py
+    - withdraw_token.py
 - [x] Project feedback Session Thu, Sep 15 02:00 PM
-- [ ] Create Presentation Sun, Sep 18 11:00 AM
-    - Project Table of Contents
-    - Problem Rush is solving in Defi
-    - How to use Rush
-- [ ] Create Live Demo URL Mon Sep 19 11:00 AM
+- [x] Create Presentation Sun, Sep 18 11:00 AM
+- [ ] Bonus
     - Front end landing page
     - Users can connect metamask
     - User can call deposit WETH function
     - User can send flashloan
-- [ ] Project Check-in #3 Tue, Sep 20 11:00 AM
+- [x] Project Check-in #3 Tue, Sep 20 11:00 AM
     - Is everything going as expected
     - What are some things you need help with
     - What do you need to complete your project?
