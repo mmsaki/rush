@@ -1,8 +1,7 @@
 project_structure:
   build: build
   contracts: contracts
-  interfaces: interfaces
-  reports: reports
+  interfaces: contracts/interfaces
   scripts: scripts
   tests: tests
 
@@ -15,13 +14,6 @@ compiler:
       runs: 200
     remappings:
       - "@openzeppelin=OpenZeppelin/openzeppelin-contracts@3.0.0"
-      # - "@aave-protocol/=lib/aave-v3-core/contracts"
-      # - "@uniswap-v3-periphery/=lib/v3-periphery/contracts"
-      # - "@uniswap-v3-core/=lib/v3-core/contracts"
-      # - "@openzeppelin-contracts/=lib/openzeppelin-contracts/contracts"
-      # - "@superfluid-finance/=lib/protocol-monorepo/packages"
-      # - "@uniswap/v3-core/contracts/=lib/v3-core/contracts"
-
   vyper:
       version: null
 
