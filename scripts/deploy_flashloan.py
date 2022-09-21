@@ -1,4 +1,4 @@
-from brownie import FlashLoanReceiver, FlashLoanSimpleReceiver
+from brownie import RushFlashLoan, RushSimpleFlashLoan
 from scripts.helper_functions import get_account, get_address_provider
 
 def ascii_art():
@@ -29,18 +29,18 @@ tx_url = "https://goerli-optimism.etherscan.io/address/{}"
 def simple_flashloan():
     acct = get_account()
     print(f"""===============================================""")
-    print(f"""Deploying Simple flashloan receiver contract ...""")
+    print(f"""Deploying Simple Rush flashloan receiver contract ...""")
     print(f"""===============================================""")
-    flashloan = FlashLoanSimpleReceiver.deploy(address_provider, {"from": acct})
+    flashloan = RushSimpleFlashLoan.deploy(address_provider, {"from": acct})
     print(f"View contract on Optimism Goerli 📍 📍 📍 📍 {tx_url.format(flashloan.address)}")
     return flashloan.tx.info()
 
 def batch_flashloan():
     acct = get_account()
     print(f"""===============================================""")
-    print(f"""Deploying Batch flashloan receiver contract ...""")
+    print(f"""Deploying Rush flashloan receiver contract ...""")
     print(f"""===============================================""")
-    flashloan = FlashLoanReceiver.deploy(address_provider, {"from": acct})
+    flashloan = RushFlashLoan.deploy(address_provider, {"from": acct})
     print(f"View contract on Optimism Goerli 📍 📍 📍 📍 {tx_url.format(flashloan.address)}")
     return flashloan.tx.info()
 

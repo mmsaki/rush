@@ -6,4 +6,4 @@ def withdraw_token(_token, amount):
     lending_pool = get_lending_pool()
     token = get_token(_token)
     tx = lending_pool.withdraw(token.address, amount, account, {"from": account})
-    return tx.info()
+    return  web3.eth.get_transaction_receipt(tx)
