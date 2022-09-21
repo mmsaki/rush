@@ -33,7 +33,10 @@
         - We can swap tokens by providing an array of token addresses and amounts.
         - With enough net worth colllateral you can swap millions.
 
-![](./images/rush_contracts/rush_contracts.006.jpeg)
+![Token Balances](./images/rush_contracts/rush_contracts.003.jpeg)
+![Token Balances](./images/rush_contracts/rush_contracts.004.jpeg)
+![10 Million](./images/rush_contracts/rush_contracts.005.jpeg)
+![60 million +](./images/rush_contracts/rush_contracts.006.jpeg)
 
 - Aave Flash loan fee
     - The flash loan fee is **initialized at deployment** to `0.09%` which is updated via aave Governance Vote. Use `FLASHLOAN_PREMIUM_TOTAL` to get current value.
