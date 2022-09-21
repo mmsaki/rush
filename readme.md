@@ -16,7 +16,7 @@
 
 ## Long Description
 
-- **Rush** is a service that interacts with **Aave v3 Core Lending pools** to supply and borrow assets using its **flashloan contracts**. Defi users can rely on simple tools to borrow crypto assets. Sometimes swapping assests can cause major shifts in prices. Defi users who **borrow assets** are sometimes forced to **liquiditation thresholds** to pay off outstanding debt. This can lead to **max losses** sometimes. Rush Flashloans provides an easy way to borrow positions from supplying **collateral on aave**. We also want all the Defi users without any technical backgrounds to learn how to use flashloans without complications. We want to offer **secure contracts** when borrowing assests. Flashloans allow users to **stay debt free**.Flashloans only cost you a **flashloan premium fee**.
+- **Rush** is a service that interacts with **Aave v3 Core Lending pools** to supply and borrow assets using its **flashloan contracts**. Defi users can rely on simple tools to borrow crypto assets. Sometimes borrowing assests can cause major shifts in prices. Defi users who **borrow assets** are sometimes forced to **liquiditation thresholds** to pay off outstanding debt. This can lead to **max losses** sometimes. Rush Flashloans provides an easy way to borrow positions from supplying **collateral on aave**. We also want all the Defi users without any technical backgrounds to learn how to use flashloans without complications. We want to offer **secure contracts** when borrowing assests. Flashloans allow users to **stay debt free**.Flashloans only cost you a **flashloan premium fee**.
 
 ## How It's Made
 
@@ -30,8 +30,8 @@
     - We supply liquidity to aave and received **atokens**
     - We call `.flashloan( )` on the lendign pool contract
         - Our receiver will be the `RushFlashloan` contract we deployed
-        - We can swap tokens by providing an array of token addresses and amounts.
-        - With enough net worth colllateral you can swap millions.
+        - We can borrow tokens by providing an array of token addresses and amounts.
+        - With enough net worth collateral you can borrow millions.
 
 ![Token Balances](./images/rush_contracts/rush_contracts.003.jpeg)
 ![Token Balances](./images/rush_contracts/rush_contracts.004.jpeg)
