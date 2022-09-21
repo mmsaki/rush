@@ -10,11 +10,11 @@
 - [**Rush Flashloans**](https://github.com/mmsaki/flash-loan-rush)
 
 ## Short Description
-- **Rush** makes it easy for Defi users to use **Aave's lending pool** to borrow and retrun assets assets using **flashloans**.
+- **Rush** makes it easy for Defi users to borrow from Aave's **lending pool** but remain with `0` debt allowing you to possibly stay forever **debt free**.
 
 ## Long Description
 
-- **Rush** is a service that interacts with **Aave v3 Core Lending pools** to supply and borrow assets using its **flashloan contracts**. Defi users can rely on simple tools to borrow crypto assets. Sometimes borrowing assests can cause major shifts in prices. Defi users who **borrow assets** are sometimes forced to **liquiditation thresholds** to pay off outstanding debt. This can lead to **max losses** sometimes. Rush Flashloans provides an easy way to borrow positions from supplying **collateral on aave**. We also want all the Defi users without any technical backgrounds to learn how to use flashloans without complications. We want to offer **secure contracts** when borrowing assests. Flashloans allow users to **stay debt free**.Flashloans only cost you a **flashloan premium fee**.
+- **Rush** is a product that interacts with **Aave v3 Core lending pool** to borrow assets using **flashloan contracts**. Defi users can rely on simple tools to borrow crypto assets. Sometimes borrowing assests can be a financial burden to you. When you **borrow assets** traditionally you are at risk of a forced **liquiditation** to pay off outstanding debt when the maket movements are against you. This will lead to **max losses** on your porfolio. Rush Flashloans provides an efficient way to benefit from your current borrowing positions. If you supplied **collateral** on aave flahloans might be a better option for you. We want all the Defi users without any technical backgrounds to learn how to use flashloans without complications. We want to ensure Rush provides **secure contracts** to flashloan with aave lending pools. Flashloans allow users to **stay debt free**. You only has to pay a **flashloan premium fee**.
 
 ## How It's Made
 
