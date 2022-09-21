@@ -19,7 +19,7 @@
 ## How It's Made
 
 - We used Aave V3 Core contracts and build Rush using their protocol. 
-    - We use **Optimism Goerli** for testing
+    ↳ We use **Optimism Goerli** for testing 
     - We deployed two contracts
         - `RushFlashLoan`
             - For borrowing multiple tokens
@@ -27,9 +27,9 @@
             - For borrowing a single token
     - We supply liquidity to aave and received **atokens**
     - We call `.flashloan( )` on the lending pool contract
-        - Our receiver will be the `RushFlashloan` contract we deployed
+        - Our `RushFlashloan` receiver contract will receive the funds.
         - We can borrow tokens by providing an array of token addresses and amounts.
-        - With enough net worth collateral you can borrow millions.
+        - With enough net-worth you can borrow millions!
 
 ![Token Balances](./images/rush_contracts/rush_contracts.003.jpeg)
 ![Token Balances](./images/rush_contracts/rush_contracts.004.jpeg)
