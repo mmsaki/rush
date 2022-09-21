@@ -10,7 +10,7 @@ flashloan_receiver = RushSimpleFlashLoan[len(RushSimpleFlashLoan) -1]
 
 usdc = get_token("USDC")
 
-usdc_amount = 10000 * 10** usdc.decimals()
+usdc_amount = 10000000 * 10** usdc.decimals()
 
 
 def run_flashloan():
@@ -24,7 +24,7 @@ def run_flashloan():
     
     tx.wait(3)
     print(f"Congrats! You have flipped a flashloan. Check it out! {tx_url.format(tx.txid)}")
-    return web3.eth.get_transaction_receipt(tx)
+    return tx
 
 def main():
     run_flashloan()

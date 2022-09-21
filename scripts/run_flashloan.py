@@ -39,7 +39,7 @@ def run_flashloan():
     tx.wait(3)
     
     print(f"Congrats! You have flipped a flashloan. Check it out! {tx_url.format(tx.txid)}")
-    return tx.events
+    return tx
 
 def main():
     run_flashloan()
