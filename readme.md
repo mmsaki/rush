@@ -26,7 +26,7 @@
         - `RushSimpleFlashLoan`
             - For borrowing a single token
     - We supply liquidity to aave and received **atokens**
-    - We call `.flashloan( )` on the lendign pool contract
+    - We call `.flashloan( )` on the lending pool contract
         - Our receiver will be the `RushFlashloan` contract we deployed
         - We can borrow tokens by providing an array of token addresses and amounts.
         - With enough net worth collateral you can borrow millions.
