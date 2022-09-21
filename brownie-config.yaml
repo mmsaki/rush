@@ -9,7 +9,7 @@ project_structure:
 compiler:
   evm_version: null
   solc:
-    version: null
+    version: 0.8.10
     optimizer:
       enabled: true
       runs: 200
