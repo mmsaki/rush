@@ -13,7 +13,7 @@ compiler:
       enabled: true
       runs: 200
     remappings:
-      - "@openzeppelin=OpenZeppelin/openzeppelin-contracts@3.0.0"
+      - "@openzeppelin=OpenZeppelin/openzeppelin-contracts@4.7.3"
   vyper:
       version: null
 
