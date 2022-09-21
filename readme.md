@@ -19,7 +19,7 @@ Rush ⤽ 🎠 ⤼ to debt **freedom**
 
 ## ▨How It's Made
 
-- We used Aave V3 Core contracts and build Rush using their protocol. 
+- We used Aave V3 Core contracts to build Rush. 
     
     ↳ We use **Optimism Goerli** for testing 
 
