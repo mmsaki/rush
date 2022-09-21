@@ -1,0 +1,10 @@
+__pycache__
+.history
+.hypothesis/
+.pytest_cache
+build/
+reports/
+.env
+.github/
+/abi_encode
+*.DS_Store
