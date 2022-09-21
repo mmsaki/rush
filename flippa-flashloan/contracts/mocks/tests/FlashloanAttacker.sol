@@ -5,10 +5,10 @@ import {SafeMath} from '../../dependencies/openzeppelin/contracts/SafeMath.sol';
 import {IERC20} from '../../dependencies/openzeppelin/contracts/IERC20.sol';
 import {GPv2SafeERC20} from '../../dependencies/gnosis/contracts/GPv2SafeERC20.sol';
 import {SafeMath} from '../../dependencies/openzeppelin/contracts/SafeMath.sol';
-import {IPoolAddressesProvider} from '../../../interfaces/IPoolAddressesProvider.sol';
+import {IPoolAddressesProvider} from '../../interfaces/IPoolAddressesProvider.sol';
 import {FlashLoanSimpleReceiverBase} from '../../flashloan/FlashLoanSimpleReceiverBase.sol';
 import {MintableERC20} from '../tokens/MintableERC20.sol';
-import {IPool} from '../../../interfaces/IPool.sol';
+import {IPool} from '../../interfaces/IPool.sol';
 import {DataTypes} from '../../protocol/libraries/types/DataTypes.sol';
 
 contract FlashloanAttacker is FlashLoanSimpleReceiverBase {
@@ -17,6 +17,10 @@ contract FlashloanAttacker is FlashLoanSimpleReceiverBase {
 
   IPoolAddressesProvider internal _provider;
   IPool internal _pool;
+
+  uint256 flashAaveAmt0;
+
+  address optimismAave = 0xB597cd8D3217ea6477232F9217fa70837ff667Af;
 
   constructor(IPoolAddressesProvider provider) FlashLoanSimpleReceiverBase(provider) {
     _pool = IPool(provider.getPool());
