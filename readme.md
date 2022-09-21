@@ -1,5 +1,5 @@
 
-#  ▦Rush ⤽ ⤼Flashloans
+#  ▦Rush ⤽ ⤼ Flashloans
 ![Rush](./images/rush_contracts/rush_contracts.002.jpeg)
 
 ## ▨Project Category for ETHOnline 2022
@@ -42,7 +42,7 @@
 ![10 Million](./images/rush_contracts/rush_contracts.005.jpeg)
 ![60 million +](./images/rush_contracts/rush_contracts.006.jpeg)
 
-## ▨Aave Flash loan fee
+## ▨Aave Flash ⤽ ⤼ loan fee
 
 - The flash loan fee is **initialized at deployment** to `0.09%` which is updated via aave Governance Vote. Use `FLASHLOAN_PREMIUM_TOTAL` to get current value.
     - Flashloan fee can be shared by the LPs (liquidity providers) and the **protocol treasury**. The `FLASHLOAN_PREMIUM_TOTAL` represents the total fee paid by the borrowers of which:
