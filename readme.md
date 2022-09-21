@@ -53,7 +53,7 @@
 ## Project Roadmap
 
 - [x] Create Project 
-    - [Loan Rush]()
+    - [Loan Rush](https://ethglobal.com/showcase/rush-8s2mf)
 - [ ] Checkin #1
     - Update: We Missed checkin #1
 - [x] Create Logo
