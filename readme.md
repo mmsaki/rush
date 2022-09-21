@@ -3,11 +3,12 @@
 ![Rush](./images/rush_contracts/rush_contracts.002.jpeg)
 
 ## ▨Project Category for ETHOnline 2022
-- **Decentralized Finance (Defi)**
-    - Rush to debt **freedom** ⤽ 🎠 ⤼
+
+### **Decentralized Finance (Defi)** 
+Rush to debt **freedom** ⤽ 🎠 ⤼
 
 ## ▨GitHub Repository
-- [**Rush Flashloans**](https://github.com/mmsaki/flash-loan-rush)
+[**Rush Flashloans**](https://github.com/mmsaki/flash-loan-rush)
 
 ## ▨Short Description
 **Rush** makes it easy for Defi users to borrow from Aave's **lending pool** but remain with `0` debt allowing you to possibly stay forever **debt free**.
@@ -44,10 +45,15 @@
 
 ## ▨Aave Flash ⤽ ⤼ loan fee
 
-- The flash loan fee is **initialized at deployment** to `0.09%` which is updated via aave Governance Vote. Use `FLASHLOAN_PREMIUM_TOTAL` to get current value.
-    - Flashloan fee can be shared by the LPs (liquidity providers) and the **protocol treasury**. The `FLASHLOAN_PREMIUM_TOTAL` represents the total fee paid by the borrowers of which:
-        - Fee to LP: `FLASHLOAN_PREMIUM_TOTAL - FLASHLOAN_PREMIUM_TO_PROTOCOL`
-        - Fee to Protocol: `FLASHLOAN_PREMIUM_TO_PROTOCOL`
+The flash loan fee is **initialized at deployment** to `0.09%` which is updated via aave Governance Vote. Use `FLASHLOAN_PREMIUM_TOTAL` to get current value.
+
+Flashloan fee can be shared by the LPs (liquidity providers) and the **protocol treasury**. 
+
+The `premium_total` represents the total fee paid by the borrowers of which:
+
+Fee to LP = `premium_total` - `flashloan_premium_to_protocol`
+
+Fee to Protocol = `flashloan_premium_to_protocol`
 
 <!-- - Setting Up
     - Ensure we have enough funds when flashloaning
