@@ -1,5 +1,5 @@
 from brownie import interface
-from scripts.helper_functions import get_lending_pool, get_accounts, get_account, get_stable_token, get_variable_token, get_atoken
+from scripts.helper_functions import get_lending_pool, get_accounts, get_account, get_stable_token, get_variable_token, get_atoken, get_token
 
 
 def pretty_table(rows, column_count, column_spacing=4):
@@ -13,44 +13,46 @@ def pretty_table(rows, column_count, column_spacing=4):
         yield ''.join(map(lambda x: x[1] + ' ' * (x[0] - len(x[1])), aligned_row))
 
 def get_erc20_tokens():
-    print(f"=================================================")
-    print(f"     Tokens in Account                           ")
-    print(f"=================================================")
+    print(f"{'    ' * 20}")
+    print(f"     Tokens in Account   ")
+    print(f"{'=====' * 20}")
     acct = get_accounts(0)
     pool = get_lending_pool()
-    rows = [['index', 'Token Name', 'balance']]
+    rows = [['index', 'Token Name', 'balance', 'address']]
     tokens = ["AAVE", "DAI", "LINK", "SUSD", "USDC", "USDT", "WETH", "WBTC"]
 
     for n in range (0, len(tokens)):
         token_name = tokens[n]
-        balance = get_atoken(tokens[n]).balanceOf(acct)
-        rows.append((str(n), str(token_name), str(balance)))
-    for line in pretty_table(rows, 3):
+        balance = get_token(tokens[n]).balanceOf(acct)
+        address = get_token(tokens[n]).address
+        rows.append((str(n), str(token_name), str(balance), str(address)))
+    for line in pretty_table(rows, 4):
         print(line)
 
 def get_atokens():
-    print(f"=================================================")
-    print(f"     Interest aTokens in Account                 ")
-    print(f"=================================================")
+    print(f"{'    ' * 20}")
+    print(f"     Interest aTokens in Account  ")
+    print(f"{'=====' * 20}")
     acct = get_accounts(0)
     pool = get_lending_pool()
-    rows = [['index', 'Token Name', 'balance']]
+    rows = [['index', 'Token Name', 'balance', 'address']]
     atokens = ["aAAVE", "aDAI", "aLINK", "aSUSD", "aUSDC", "aUSDT", "aWETH", "aWBTC"]
     
     for n in range (0, len(atokens)):
         token_name = atokens[n]
         balance = get_atoken(atokens[n]).balanceOf(acct)
-        rows.append((str(n), str(token_name), str(balance)))
-    for line in pretty_table(rows, 3):
+        address = get_atoken(atokens[n]).address
+        rows.append((str(n), str(token_name), str(balance), str(address)))
+    for line in pretty_table(rows, 4):
         print(line)
 
 def get_stable_tokens():
-    print(f"=================================================")
-    print(f"     Stable Debt Tokens in Account               ")
-    print(f"=================================================")
+    print(f"{'    ' * 20}")
+    print(f"     Stable Debt Tokens in Account  ")
+    print(f"{'=====' * 20}")
     acct = get_accounts(0)
     pool = get_lending_pool()
-    rows = [['index', 'Token Name', 'balance']]
+    rows = [['index', 'Token Name', 'balance', 'address']]
     stable_tokens = [
         "stableDebtAAVE", 
         "stableDebtDAI", 
@@ -65,17 +67,18 @@ def get_stable_tokens():
     for n in range (0, len(stable_tokens)):
         token_name = stable_tokens[n]
         balance = get_stable_token(stable_tokens[n]).principalBalanceOf(acct)
-        rows.append((str(n), str(token_name), str(balance)))
-    for line in pretty_table(rows, 3):
+        address = get_stable_token(stable_tokens[n]).address
+        rows.append((str(n), str(token_name), str(balance), str(address)))
+    for line in pretty_table(rows, 4):
         print(line)
 
 def get_variable_tokens():
-    print(f"=================================================")
-    print(f"     Variable Debt Tokens in Account             ")
-    print(f"=================================================")
+    print(f"{'    ' * 20}")
+    print(f"     Variable Debt Tokens in Account  ")
+    print(f"{'=====' * 20}")
     acct = get_accounts(0)
     pool = get_lending_pool()
-    rows = [['index', 'Token Name', 'balance']]
+    rows = [['index', 'Token Name', 'balance', 'address']]
     variable_tokens = [
         "variableDebtAAVE", 
         "variableDebtDAI", 
@@ -90,8 +93,9 @@ def get_variable_tokens():
     for n in range (0, len(variable_tokens)):
         token_name = variable_tokens[n]
         balance = get_variable_token(variable_tokens[n]).scaledBalanceOf(acct)
-        rows.append((str(n), str(token_name), str(balance)))
-    for line in pretty_table(rows, 3):
+        address = get_variable_token(variable_tokens[n]).address
+        rows.append((str(n), str(token_name), str(balance), str(address)))
+    for line in pretty_table(rows, 4):
         print(line)
 
 def main ():
