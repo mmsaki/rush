@@ -30,7 +30,7 @@ def get_erc20_tokens():
 
 def get_atokens():
     print(f"=================================================")
-    print(f"     aTokens in Account                          ")
+    print(f"     Interest aTokens in Account                 ")
     print(f"=================================================")
     acct = get_accounts(0)
     pool = get_lending_pool()
@@ -46,7 +46,7 @@ def get_atokens():
 
 def get_stable_tokens():
     print(f"=================================================")
-    print(f"     Stable Tokens in Account                    ")
+    print(f"     Stable Debt Tokens in Account               ")
     print(f"=================================================")
     acct = get_accounts(0)
     pool = get_lending_pool()
@@ -71,7 +71,7 @@ def get_stable_tokens():
 
 def get_variable_tokens():
     print(f"=================================================")
-    print(f"     Variable Tokens in Account                  ")
+    print(f"     Variable Debt Tokens in Account             ")
     print(f"=================================================")
     acct = get_accounts(0)
     pool = get_lending_pool()
