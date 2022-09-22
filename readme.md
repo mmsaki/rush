@@ -64,7 +64,7 @@ Fee to Protocol = `flashloan_premium_to_protocol`
     - [V3 Testnet Aave Address on Optimism Görli](https://docs.aave.com/developers/deployed-contracts/v3-testnet-addresses) -->
 
 
-## ▨Project Roadmap
+## ▨Roadmap
 
 - [x] Create Project
     - [Loan Rush](https://ethglobal.com/showcase/rush-8s2mf)
