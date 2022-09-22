@@ -5,7 +5,7 @@
 ## ▨Project Category for ETHOnline 2022
 
 ### **Decentralized Finance (Defi)** 
-Rush ⤽ 🎠 ⤼ to `0` debt
+Rush ⤽ 🎠 ⤼ with `0` debt
 
 ## ▨GitHub Repository
 [**Rush Flashloans**](https://github.com/mmsaki/flash-loan-rush)
