@@ -3,7 +3,6 @@ project_structure:
   contracts: contracts
   interfaces: contracts/interfaces
   scripts: scripts
-  tests: tests
 
 compiler:
   evm_version: null
