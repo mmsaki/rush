@@ -5,10 +5,10 @@ token_name = "USDT"
 amount = 45000000000
 
 def mint_token(token_name, amount):
-    acct = get_account()
+    dev = get_account()
     token = get_token(token_name)
     mintable_token = interface.IMintableERC20(token.address)
-    tx = mintable_token.mint(amount * 10 ** token.decimals(), {'from': acct})
+    tx = mintable_token.mint(amount * 10 ** token.decimals(), {'from': dev})
     return tx
 
 def main():

@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: BUSL-1.1
 pragma solidity 0.8.10;
 
-import {IERC20} from '../../dependencies/openzeppelin/contracts/IERC20.sol';
-import {GPv2SafeERC20} from '../../dependencies/gnosis/contracts/GPv2SafeERC20.sol';
+import {IERC20} from '@aave/contracts/dependencies/openzeppelin/contracts/IERC20.sol';
+import {GPv2SafeERC20} from '@aave/contracts/dependencies/gnosis/contracts/GPv2SafeERC20.sol';
 import {IPoolAddressesProvider} from '../../interfaces/IPoolAddressesProvider.sol';
 import {FlashLoanReceiverBase} from '../../flashloan/FlashLoanReceiverBase.sol';
-import {MintableERC20} from '../tokens/MintableERC20.sol';
+import {MintableERC20} from '@aave/contracts/mocks/tokens/MintableERC20.sol';
 
 contract RushFlashLoan is FlashLoanReceiverBase {
   using GPv2SafeERC20 for IERC20;
