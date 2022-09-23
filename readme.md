@@ -1,6 +1,6 @@
 
 #  ▦Rush ⤽ ⤼ Flashloan Rush
-![Rush](./images/rush_contracts/rush_contracts.002.jpeg)
+![Rush](./images/rush_flashloans/rush_flashloans.002.jpeg)
 
 ## ▨Category for ETHOnline 2022
 
@@ -38,10 +38,10 @@ Rush ⤽ 🎠 ⤼ with `0` debt
         - We can borrow tokens by providing an array of token addresses and amounts.
         - With enough net-worth you can borrow millions!
 
-![Token Balances](./images/rush_contracts/rush_contracts.003.jpeg)
-![Token Balances](./images/rush_contracts/rush_contracts.004.jpeg)
-![10 Million](./images/rush_contracts/rush_contracts.005.jpeg)
-![60 million +](./images/rush_contracts/rush_contracts.006.jpeg)
+![Token Balances](./images/rush_flashloans/rush_flashloans.003.jpeg)
+![Token Balances](./images/rush_flashloans/rush_flashloans.004.jpeg)
+![10 Million](./images/rush_flashloans/rush_flashloans.005.jpeg)
+![60 million +](./images/rush_flashloans/rush_flashloans.006.jpeg)
 
 ## ▨Aave Flash ⤽ ⤼ loan fee
 
@@ -109,4 +109,4 @@ Fee to Protocol = `flashloan_premium_to_protocol`
 - Aaave
 - Optimism
 
-![Optimism Goerli](./images/rush_contracts/rush_contracts.008.jpeg)
+![Optimism Goerli](./images/rush_flashloans/rush_flashloans.008.jpeg)
