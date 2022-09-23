@@ -1,11 +1,11 @@
 
-#  ▦Rush ⤽ ⤼ Flashloans
+#  ▦Rush ⤽ ⤼ Flashloan Rush
 ![Rush](./images/rush_contracts/rush_contracts.002.jpeg)
 
-## ▨Project Category for ETHOnline 2022
+## ▨Category for ETHOnline 2022
 
 ### **Decentralized Finance (Defi)** 
-Rush ⤽ 🎠 ⤼ to debt **freedom**
+Rush ⤽ 🎠 ⤼ with `0` debt
 
 ## ▨GitHub Repository
 [**Rush Flashloans**](https://github.com/mmsaki/flash-loan-rush)
