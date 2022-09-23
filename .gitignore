@@ -8,3 +8,8 @@ reports/
 .github/
 /abi_encode
 *.DS_Store
+.prettierrc.json
+.gitattributes
+.prettierignore
+.solhint.json
+.soliumrc.json
