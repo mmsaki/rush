@@ -1,6 +1,0 @@
-package_name: vault
-version: 0.4.3
-settings:
-  deployment_networks:
-    - optimism-goerli
-  include_dependencies: false

@@ -14,3 +14,4 @@ reports/
 *.solhint.json
 *.soliumrc.json
 *.husky/
+vaults/node_modules/
