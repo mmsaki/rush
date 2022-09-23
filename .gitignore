@@ -13,3 +13,4 @@ reports/
 .prettierignore
 .solhint.json
 .soliumrc.json
+.husky/
