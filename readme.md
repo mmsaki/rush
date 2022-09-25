@@ -21,7 +21,7 @@ Rush ⤽ 🎠 ⤼ with `0` debt
 
 - We used Aave V3 Core contracts to build Rush. 
     
-    ↳ We use **Optimism Goerli** for testing 
+    ↳ We deployed to **Optimism Goerli** for testing 
 
     ↳ We deployed two contracts
         
@@ -30,13 +30,13 @@ Rush ⤽ 🎠 ⤼ with `0` debt
     - `RushSimpleFlashLoan`
         - For borrowing a single token
     
-    ↳ We supply liquidity to aave and received **atokens**
+    ↳ We ensure we have enough funds to pay flashloan fee.
 
     ↳ We call `.flashloan( )` on the lending pool contract
         
-    - Our `RushFlashloan` receiver contract will receive the funds.
-        - We can borrow tokens by providing an array of token addresses and amounts.
-        - With enough net-worth you can borrow millions!
+    - Our `RushFlashloan` contract will receive the funds and repay to aave with a flashloan fee.
+        - We can add multiple tokens by providing the array of tokens and amounts we want to borrow.
+        - With enough net-worth you can borrow upto millions!
 
 ![Token Balances](./images/rush_flashloans/rush_flashloans.003.jpeg)
 ![Token Balances](./images/rush_flashloans/rush_flashloans.004.jpeg)
@@ -62,7 +62,6 @@ Fee to Protocol = `flashloan_premium_to_protocol`
     - Fail safe security 
 - Aave contracts and registry on Optimism 
     - [V3 Testnet Aave Address on Optimism Görli](https://docs.aave.com/developers/deployed-contracts/v3-testnet-addresses) -->
-
 
 ## ▨Roadmap
 
@@ -108,5 +107,6 @@ Fee to Protocol = `flashloan_premium_to_protocol`
 ## ▧Sponsors
 - Aaave
 - Optimism
+- Yearn Finance
 
 ![Optimism Goerli](./images/rush_flashloans/rush_flashloans.008.jpeg)
