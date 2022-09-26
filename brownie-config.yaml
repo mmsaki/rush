@@ -26,6 +26,10 @@ console:
 
 networks:
   default: optimism-goerli
+  Oasis: emerald-testnet
+    RushToken: '0x47C9b316807aA5A22D21DBcF9715515F030ebcf1'
+    VaultRegistry: '0x0EE276d2c1F46A2c90FaFd541cB712c5Ad9D425a'
+    RushToken: '0x9513cB7DF4E87c8aA4b832395e1111f99218ca04'
   optimism-goerli:
     verify: True
     AAVE-TestnetPriceAggregator-Optimistic: '0xdda6d35BaCc16f97F1CFc85A88DA47Bf06EC4695' 
