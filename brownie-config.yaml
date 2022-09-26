@@ -26,6 +26,13 @@ console:
 
 networks:
   default: optimism-goerli
+  Polygon: polygon-mainnet
+    APW Token: '0x6C0AB120dBd11BA701AFF6748568311668F63FE0'
+    Controller: '0x4bA30FA240047c17FC557b8628799068d4396790'
+    Registry: '0x72d15EAE2Cd729D8F2e41B1328311f3e275612B9'
+    AMMRegisrty: '0x6646A35e74e35585B0B02e5190445A324E5D4D01'
+    AMMRouter: '0x790a0cA839DC5E4690C8c58cb57fD2beCA419AFc'
+
   Oasis: emerald-testnet
     RushToken: '0x47C9b316807aA5A22D21DBcF9715515F030ebcf1'
     VaultRegistry: '0x0EE276d2c1F46A2c90FaFd541cB712c5Ad9D425a'
