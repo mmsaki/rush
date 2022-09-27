@@ -6,7 +6,7 @@ dependencies:
 compiler:
   evm_version: null
   solc:
-    version: 0.8.10
+    version: null
     optimizer:
       enabled: true
       runs: 200

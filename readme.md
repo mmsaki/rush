@@ -11,7 +11,7 @@ Rush ⤽ 🎠 ⤼ with `0` debt
 [**Rush Flashloans**](https://github.com/mmsaki/rush
 
 ## ▨Short Description
-**Rush** makes it easy for Defi users to borrow from Aave's **lending pool** but remain with `0` debt allowing you to possibly stay forever **debt free**.
+**Rush** makes it easy for Defi users to borrow from Aave's **lending pool** but remain with `0` debt allowing you to possibly stay forever **debt free**. Later we will add our flashloan strategis to **Yearn Vaults** as a strategy to boost yields. 
 
 ## ▨Long Description
 
@@ -54,6 +54,14 @@ The `premium_total` represents the total fee paid by the borrowers of which:
 Fee to LP = `premium_total` - `flashloan_premium_to_protocol`
 
 Fee to Protocol = `flashloan_premium_to_protocol`
+
+# Yearn Vaults
+
+We deployed some yearn vaults that would used flashloan strategies to boost returns.
+
+[Vaults](./images/rush_flashloans/rush_flashloans.010.jpeg)
+
+Still working on other features but this is what I have so far!
 
 <!-- - Setting Up
     - Ensure we have enough funds when flashloaning
@@ -109,4 +117,4 @@ Fee to Protocol = `flashloan_premium_to_protocol`
 - Optimism
 - Yearn Finance
 
-![Optimism Goerli](./images/rush_flashloans/rush_flashloans.008.jpeg)
+![Optimism Goerli](./images/rush_flashloans/rush_flashloans.012.jpeg)
