@@ -1,0 +1,44 @@
+dependencies:
+  - OpenZeppelin/openzeppelin-contracts@3.4.2-solc-0.7
+
+compiler:
+  evm_version: null
+  solc:
+    version: 0.7.0
+    optimizer:
+      enabled: true
+      runs: 200
+    remappings:
+      - "@openzeppelin=OpenZeppelin/openzeppelin-contracts@3.4.2-solc-0.7"
+
+networks:
+  default: mumbai
+  optimism-goerli:
+    Resolver: '0x21d4E9fbB9DB742E6ef4f29d189a7C18B0b59136'
+    Host: '0xE40983C2476032A0915600b9472B3141aA5B5Ba9'
+    CFAv1: '0xff48668fa670A85e55A7a822b352d5ccF3E7b18C'
+    IDAv1: '0x96215257F2FcbB00135578f766c0449d239bd92F'
+    SuperTokenFactory: '0x9aCc39d15e3f168c111a1D4F80271a9E526c9a9F'
+    SuperfluidLoader v1: '0x5Bb5908dcCC9Bb0fC39a78CfDf9e47B4C08E9521'
+  mumbai:
+    Resolver: '0x8C54C83FbDe3C59e59dd6E324531FB93d4F504d3'
+    Host: '0xEB796bdb90fFA0f28255275e16936D25d3418603'
+    CFAv1: '0x49e565Ed1bdc17F3d220f72DF0857C26FA83F873'
+    IDAv1: '0x804348D4960a61f2d5F9ce9103027A3E849E09b8'
+    SuperTokenFactory: '0x9aCc39d15e3f168c111a1D4F80271a9E526c9a9F'
+    SuperfluidLoader v1: '0x0d56ED56b63382B0FC964490feB9AE438B6B4b79'
+    # Super Tokens
+    fDAI: '0x15F0Ca26781C3852f8166eD2ebce5D18265cceb7'
+    fUSDC: '0xbe49ac1EadAc65dccf204D4Df81d650B50122aB2'
+    fTUSD: '0xA794C9ee519FD31BbCE643e8D8138f735E97D1DB'
+    MATICx: '0x96B82B65ACF7072eFEb00502F45757F254c2a0D4'
+    fDAIx: '0x5D8B4C2554aeB7e86F387B4d6c00Ac33499Ed01f'
+    fUSDCx: '0x42bb40bF79730451B11f6De1CbA222F17b87Afd7'
+    fTUSDx: 0x918E0d5C96cAC79674E2D38066651212be3C9C48'
+
+dotenv:
+  .env
+
+wallets:
+  from_key: ${PRIVATE_KEY}
+  from_mnemonic: ${MNEMONIC}
