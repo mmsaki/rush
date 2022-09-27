@@ -5,7 +5,7 @@
 ## ▨Category for ETHOnline 2022
 
 ### **Decentralized Finance (Defi)** 
-Rush ⤽ 🎠 ⤼ with `0` debt
+Rush ⤽ 🎠 ⤼ `0` debt
 
 ## ▨GitHub Repository
 [**Rush Flashloans**](https://github.com/mmsaki/rush
@@ -40,7 +40,9 @@ Rush ⤽ 🎠 ⤼ with `0` debt
 
 ![Token Balances](./images/rush_flashloans/rush_flashloans.003.jpeg)
 ![Token Balances](./images/rush_flashloans/rush_flashloans.004.jpeg)
-![10 Million](./images/rush_flashloans/rush_flashloans.005.jpeg)
+- [1 million USDC flashloan - Etherscan](https://goerli-optimism.etherscan.io/tx/0xe7b6883bc925eef37d318efa3353a24a74ef7b04fd9e2ba2a8bdfa1116d8f1a2)
+![1 Million](./images/rush_flashloans/rush_flashloans.005.jpeg)
+- [100 + million Tokens flashloan - Etherscan](https://goerli-optimism.etherscan.io/tx/0xb096db8fbf39c390f343603d9dc51bd7ed41f51a47124cb6b1bdb3007f7f7a76)
 ![60 million +](./images/rush_flashloans/rush_flashloans.006.jpeg)
 
 ## ▨Aave Flash ⤽ ⤼ loan fee
