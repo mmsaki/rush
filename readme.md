@@ -69,7 +69,7 @@ Rush ⤽ 🎠 ⤼ `0` debt
 
     - [Vaults](./images/rush_flashloans/rush_flashloans.010.jpeg)
 
-- Still working on other features but this is what I have so far!
+- Still working on other features...
 
 <!-- - Setting Up
     - Ensure we have enough funds when flashloaning
