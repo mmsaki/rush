@@ -17,7 +17,11 @@ Rush ⤽ 🎠 ⤼ `0` debt
 
 **Rush** provides you with python scripts that interacts with **Aave v3 Core lending pool** to borrow assets using **flashloan contracts**. Defi users can rely on simple tools to borrow crypto assets. Sometimes borrowing assets can be a financial burden to you. When you **borrow assets** traditionally you are at risk of a forced **liquiditation** to pay off outstanding debt when the maket movements are against you. This will lead to **max losses** on your porfolio. Rush Flashloans provides an efficient way to benefit from your current borrowing positions. If you supplied **collateral** on Aave, then flahloans might benefit you. We want all the Defi users without any technical backgrounds to learn how to use flashloans without complications. We want to ensure Rush provides **secure contracts** to flashloan with Aave lending pools. Flashloans allow users to **stay debt free**. You only have to pay a **flashloan premium fee** currently at `0.09%`.
 
-Warning. You will not make any profits from using flashloans as they are on this repo.
+You will not make any profits from using flashloans as they are on this repo.
+| :warning: WARNING          |
+|:---------------------------|
+| I should warn you ...      |
+
 
 ## ▨How It's Made
 
