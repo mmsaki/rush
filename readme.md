@@ -8,7 +8,7 @@
 Rush ⤽ 🎠 ⤼ `0` debt
 
 ## ▨GitHub Repository
-[**Rush Flashloans**](https://github.com/mmsaki/rush
+[**Rush Flashloans**](https://github.com/mmsaki/rush)
 
 ## ▨Short Description
 **Rush** makes it easy for Defi users to borrow from Aave's **lending pool** but remain with `0` debt allowing you to possibly stay forever **debt free**. Later we will add our flashloan strategis to **Yearn Vaults** as a strategy to boost yields. 
