@@ -53,23 +53,23 @@ Rush ⤽ 🎠 ⤼ `0` debt
 
 ## ▨Aave Flash ⤽ ⤼ loan fee
 
-The flash loan fee is **initialized at deployment** to `0.09%` which is updated via aave Governance Vote. Use `FLASHLOAN_PREMIUM_TOTAL` to get current value.
+- The flash loan fee is **initialized at deployment** to `0.09%` which is updated via aave Governance Vote. Use `FLASHLOAN_PREMIUM_TOTAL` to get current value.
 
-Flashloan fee can be shared by the LPs (liquidity providers) and the **protocol treasury**. 
+    - Flashloan fee can be shared by the LPs (liquidity providers) and the **protocol treasury**. 
 
-The `premium_total` represents the total fee paid by the borrowers of which:
+    - The `premium_total` represents the total fee paid by the borrowers of which:
 
-Fee to LP = `premium_total` - `flashloan_premium_to_protocol`
+        - Fee to LP = `premium_total` - `flashloan_premium_to_protocol`
 
-Fee to Protocol = `flashloan_premium_to_protocol`
+        - Fee to Protocol = `flashloan_premium_to_protocol`
 
 # Yearn Vaults
 
-We deployed some yearn vaults that would used flashloan strategies to boost returns.
+- We deployed some yearn vaults that would used flashloan strategies to boost returns.
 
-[Vaults](./images/rush_flashloans/rush_flashloans.010.jpeg)
+    - [Vaults](./images/rush_flashloans/rush_flashloans.010.jpeg)
 
-Still working on other features but this is what I have so far!
+- Still working on other features but this is what I have so far!
 
 <!-- - Setting Up
     - Ensure we have enough funds when flashloaning
