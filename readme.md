@@ -109,14 +109,14 @@ Rush ⤽ 🎠 ⤼ `0` debt
     - Is everything going as expected?
     - What are some things you need help with?
     - What do you need to complete your project?
-- [ ] Project feedback Session Wed, Sep 21 02:00 PM
+- [x] Project feedback Session Wed, Sep 21 02:00 PM
     - Present project for feedback
-- [ ] ETHOnline Summit Fri, Sep 23 11:00 AM
+- [x] ETHOnline Summit Fri, Sep 23 11:00 AM
     - If ready submit project
     - Record Video demonstration on how to use rush
-- [ ] Submissions Due! Sun, Sep 25 02:00 PM
+- [x] Submissions Due! Sun, Sep 25 02:00 PM
     - Submit project by 2:00pm
-- [ ] Project Judging Mon, Sep 26 11:00 AM
+- [x] Project Judging Mon, Sep 26 11:00 AM
     - Present to judges and sponsors
  
 
