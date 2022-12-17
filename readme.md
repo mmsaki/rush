@@ -1,21 +1,22 @@
 
-#  ▦Rush ⤽ ⤼ Flashloan Rush
+# Rush ⤽ ⤼ Flashloan Rush
 ![Rush](./images/rush_flashloans/rush_flashloans.002.jpeg)
 
-## ▨Category for ETHOnline 2022
+## Category for ETHOnline 2022
 
 ### **Decentralized Finance (Defi)** 
-Rush ⤽ 🎠 ⤼ `0` debt
 
-## ▨GitHub Repository
+I created this forex tool to help onboard DeFi users to using flashloans on lending protocols like Aave, all while keeping their debt at zero. With this tool, anyone can learn how to use flashloans, even if they don't have a technical background.
+
+## GitHub Repository
 [**Rush Flashloans**](https://github.com/mmsaki/rush)
 
-## ▨Short Description
-**Rush** makes it easy for Defi users to borrow from Aave's **lending pool** but remain with `0` debt allowing you to possibly stay forever **debt free**. Later we will add our flashloan strategis to **Yearn Vaults** as a strategy to boost yields. 
+## Description
 
-## ▨Long Description
+Aave v3 Core lending pool allows you to borrow assets using flashloan contracts. If your goal is to stay debt-free, you can borrow crypto assets as needed as long as you can prove that you have enough collateral. You need to understand the risks of financial burdens from borrowing assets and getting liquidated, especially when market movements are volatile and against you. In order to avoid maximum losses, the only strategy you have left is using flashloans.
 
-**Rush** provides you with python scripts that interacts with **Aave v3 Core lending pool** to borrow assets using **flashloan contracts**. Defi users can rely on simple tools to borrow crypto assets. Sometimes borrowing assets can be a financial burden to you. When you **borrow assets** traditionally you are at risk of a forced **liquiditation** to pay off outstanding debt when the maket movements are against you. This will lead to **max losses** on your porfolio. Rush Flashloans provides an efficient way to benefit from your current borrowing positions. If you supplied **collateral** on Aave, then flahloans might benefit you. We want all the Defi users without any technical backgrounds to learn how to use flashloans without complications. We want to ensure Rush provides **secure contracts** to flashloan with Aave lending pools. Flashloans allow users to **stay debt free**. You only have to pay a **flashloan premium fee** currently at `0.09%`.
+With this project, my goal is to provide you with a forex tool to help you maximize your borrowing power and debt positions. If you have provided collateral on Aave before, this might be of great use to you. All DeFi users, with or without technical backgrounds, can learn how to use flashloans without any complications. We want to ensure our forex tool provides secure interactions with Aave's lending pools using flashloan receiver smart contracts. You only have to pay a flashloan premium fee, currently at 0.09%.
+
 
 
 | :warning: WARNING          |
@@ -23,61 +24,37 @@ Rush ⤽ 🎠 ⤼ `0` debt
 | I should warn you. You will not make any profits from using flashloans as they are on this repo.      |
 
 
-## ▨How It's Made
+## Getting Started
 
-- We used Aave V3 Core contracts to build Rush. 
-    
-    ↳ We deployed to **Optimism Goerli** for testing 
+The set up is easy. Rush is an open source project the tool is accessible to everyone. I am in the build process of to make clean up the projects code base. I hope to make flashloans easy for to everyone to understand. See the demo transactions in the next segment. Work in progress...
 
-    ↳ We deployed two contracts
-        
-    - `RushFlashLoan`
-        - For borrowing multiple tokens
-    - `RushSimpleFlashLoan`
-        - For borrowing a single token
-    
-    ↳ We ensure we have enough funds to pay flashloan fee.
+Check back later. 👷
 
-    ↳ We call `.flashloan( )` on the lending pool contract
-        
-    - Our `RushFlashloan` contract will receive the funds and repay to aave with a flashloan fee.
-        - We can add multiple tokens by providing the array of tokens and amounts we want to borrow.
-        - With enough net-worth you can borrow upto millions!
+## Transactions Reference
 
-![Token Balances](./images/rush_flashloans/rush_flashloans.003.jpeg)
-![Token Balances](./images/rush_flashloans/rush_flashloans.004.jpeg)
+See examples below of flashloan transations and how they are submitted. From these results aave fees for $1,000,000 flashloan is $500.
+
 - [1 million USDC flashloan - Etherscan](https://goerli-optimism.etherscan.io/tx/0xe7b6883bc925eef37d318efa3353a24a74ef7b04fd9e2ba2a8bdfa1116d8f1a2)
-![1 Million](./images/rush_flashloans/rush_flashloans.005.jpeg)
 - [100 + million Tokens flashloan - Etherscan](https://goerli-optimism.etherscan.io/tx/0xb096db8fbf39c390f343603d9dc51bd7ed41f51a47124cb6b1bdb3007f7f7a76)
-![60 million +](./images/rush_flashloans/rush_flashloans.006.jpeg)
 
-## ▨Aave Flash ⤽ ⤼ loan fee
+## Aave Flash loan fee
 
-- The flash loan fee is **initialized at deployment** to `0.09%` which is updated via aave Governance Vote. Use `FLASHLOAN_PREMIUM_TOTAL` to get current value.
+The flash loan fee is initialized at deployment to `0.09%` which is updated via aave Governance Vote.
 
-    - Flashloan fee can be shared by the LPs (liquidity providers) and the **protocol treasury**. 
+- Flashloan fee can be shared by the LPs (liquidity providers) and the protocol treasury.
 
-    - The `premium_total` represents the total fee paid by the borrowers of which:
+- The `premium_total` represents the total fee paid by the borrowers of which:
 
-        - Fee to LP = `premium_total` - `flashloan_premium_to_protocol`
+  - Fee to LP = `premium_total` - `flashloan_premium_to_protocol`
 
-        - Fee to Protocol = `flashloan_premium_to_protocol`
+  - Fee to Protocol = `flashloan_premium_to_protocol`
 
-# Yearn Vaults
+## Setting Up
 
-- We deployed some yearn vaults that would used flashloan strategies to boost returns.
-
-    - [Vaults](./images/rush_flashloans/rush_flashloans.010.jpeg)
-
-- Still working on other features...
-
-<!-- - Setting Up
-    - Ensure we have enough funds when flashloaning
-    - Calculate the profitability of liquidating loans vs gas costs
-    - Ensure we have access toe the latest protocol user data
-    - Fail safe security 
-- Aave contracts and registry on Optimism 
-    - [V3 Testnet Aave Address on Optimism Görli](https://docs.aave.com/developers/deployed-contracts/v3-testnet-addresses) -->
+- Ensure we have enough funds when flashloaning
+- Calculate the profitability of liquidating loans vs gas costs
+- Fail safe security by using a testnet like Goerli before moving to mainnet
+- You can find Aave contracts annd registries [Testnet Aave Contract Addresses](https://docs.aave.com/developers/deployed-contracts/v3-testnet-addresses)
 
 ## ▨Roadmap
 
@@ -122,7 +99,5 @@ Rush ⤽ 🎠 ⤼ `0` debt
 
 ## ▧Sponsors
 - Aaave
-- Optimism
-- Yearn Finance
 
 ![Optimism Goerli](./images/rush_flashloans/rush_flashloans.012.jpeg)
