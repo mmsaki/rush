@@ -24,7 +24,7 @@ def ascii_art():
     """)
 
 address_provider = get_address_provider()
-tx_url = "https://goerli-optimism.etherscan.io/address/{}"
+tx_url = "https://goerli.etherscan.io/address/{}"
 
 def simple_flashloan():
     dev = get_account()
