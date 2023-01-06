@@ -17,10 +17,10 @@ wbtc = get_token("WBTC")
 aave = get_token("AAVE")
 link = get_token("LINK")
 
-dai_amount = 60000 * 10** dai.decimals()
-usdc_amount = 10000 * 10** usdc.decimals()
-usdt_amount = 10000 * 10** usdt.decimals()
-susd_amount = 30000 * 10** susd.decimals() 
+dai_amount = 60000000 * 10** dai.decimals()
+usdc_amount = 10000000 * 10** usdc.decimals()
+usdt_amount = 10000000 * 10** usdt.decimals()
+susd_amount = 300000 * 10** susd.decimals() 
 weth_amount = 10 * 10** weth.decimals()
 wbtc_amount = 20000 * 10** wbtc.decimals()
 aave_amount = 1000000 * 10** aave.decimals()
@@ -37,7 +37,7 @@ def run_flashloan():
     params = "0xab9c4b5d"
     referral = 0
     tx = pool.flashLoan(receiver, assets, amounts, interest, behalf_of, params, referral, {"from": dev})
-    tx.wait(3)
+    tx.wait(1)
     
     print(f"Congrats! You have flipped a flashloan. Check it out! {tx_url.format(tx.txid)}")
     return tx
