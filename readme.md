@@ -212,6 +212,40 @@ def run_flashloan():
     tx = pool.flashLoanSimple(receiver, assets, amount, params, referral, {"from": dev})
 ```
 
+## Multi Token Flashloans
+
+If you run this command, you can flashloan over 100M+ in tokens.
+
+```bash
+brownie run scripts/aave/multi_flashloan.py 
+```
+
+```python
+Brownie v1.19.1 - Python development framework for Ethereum
+
+RushProject is the active project.
+
+Running 'scripts/aave/multi_flashloan.py::main'...
+Transaction sent: 0x310974980351e66748421d1ef01b3d940202090525a99630e03150cb9aeae859
+  Gas price: 4.924637698 gwei   Gas limit: 1578971   Nonce: 83
+  Transaction confirmed   Block: 8265853   Gas used: 1113994 (70.55%)
+
+  Transaction confirmed   Block: 8265853   Gas used: 1113994 (70.55%)
+
+Congrats! You have flipped a flashloan. Check it out! https://goerli.etherscan.io/tx/0x310974980351e66748421d1ef01b3d940202090525a99630e03150cb9aeae859
+
+```
+
+Go to [/scripts/aave/multi_flashloan.py](./scripts/aave/multi_flashloan.py) and adjust token amounts. Try it out or yourself.
+
+## Support me
+
+If you want to support me, you can. I accept ETH. Currently struggling to find a job.
+ETH: msaki.eth [0x04655832bcb0a9a0be8c5ab71e4d311464c97af5]
+BTC: bc1qafvljh25wxd7ser9vsawzm95aaju883r9twd0p
+DOGE: D5y6zYKN4WsWCr4YmnKhAFqCCFC31AN3We
+
+
 | :warning: WARNING   |
 |:--------------------|
 | I should warn you. You will not make any profits from using flashloans in the current state on this repo.
