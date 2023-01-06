@@ -2,7 +2,7 @@ from brownie import accounts, config, network, interface, RushFlashLoan
 from scripts.aave.helper_functions import get_address_provider, get_token, get_account
 
 
-tx_url = "https://goerli-optimism.etherscan.io/tx/{}"
+tx_url = "https://goerli.etherscan.io/tx/{}"
 
 pool = interface.IPool(get_address_provider().getPool())
 

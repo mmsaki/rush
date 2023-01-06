@@ -25,7 +25,7 @@ def get_token(token_name):
 
 def get_address_provider():
     address_provider = interface.IPoolAddressesProvider(
-        config["networks"][network.show_active()]["PoolAddressesProvider-Optimistic"]
+        config["networks"][network.show_active()]["PoolAddressesProvider"]
     )
     return address_provider
 
