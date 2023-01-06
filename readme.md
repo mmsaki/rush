@@ -100,7 +100,7 @@ Transaction sent: 0x10ca1b6c6286d141dded7e21d17dc392a120778d5c7b23fd51f4431e2a28
   RushFlashLoan.constructor confirmed   Block: 8265347   Gas used: 569927 (90.91%)
   RushFlashLoan deployed at: 0x9db7BcB878E9b3eFDf8FAfcfbbF11a54d80f089c
 
-View contract on Optimism Goerli: https://goerli-optimism.etherscan.io/address/0x9db7BcB878E9b3eFDf8FAfcfbbF11a54d80f089c
+View contract on Optimism Goerli: https://goerli.etherscan.io/address/0x9db7BcB878E9b3eFDf8FAfcfbbF11a54d80f089c
 Transaction was Mined 
 ---------------------
 Tx Hash: 0x10ca1b6c6286d141dded7e21d17dc392a120778d5c7b23fd51f4431e2a289c98
@@ -116,7 +116,7 @@ Transaction sent: 0x32ab837f8413fa05c927df8d37a9129dc7bfe439cf84377b446f99e36917
   RushSimpleFlashLoan.constructor confirmed   Block: 8265348   Gas used: 397895 (90.91%)
   RushSimpleFlashLoan deployed at: 0xA2C4ab618Ad699372D067473D57cbb8371E61Cb4
 
-View contract on Optimism Goerli: https://goerli-optimism.etherscan.io/address/0xA2C4ab618Ad699372D067473D57cbb8371E61Cb4
+View contract on Optimism Goerli: https://goerli.etherscan.io/address/0xA2C4ab618Ad699372D067473D57cbb8371E61Cb4
 Transaction was Mined 
 ---------------------
 Tx Hash: 0x32ab837f8413fa05c927df8d37a9129dc7bfe439cf84377b446f99e3691767f2
