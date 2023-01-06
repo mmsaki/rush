@@ -199,3 +199,17 @@ def run_flashloan():
 | :warning: WARNING   |
 |:--------------------|
 | I should warn you. You will not make any profits from using flashloans in the current state on this repo.
+
+## Publish and Verify Contract on Etherscan
+
+Brownie has a simple way to quickly instantly verify your contract on etherscan. Run the following command.
+
+```python
+>>> contract = RushFlashLoan.at("0x9db7BcB878E9b3eFDf8FAfcfbbF11a54d80f089c")
+>>> contract
+<RushFlashLoan Contract '0x9db7BcB878E9b3eFDf8FAfcfbbF11a54d80f089c'>
+>>> RushFlashLoan.publish_source(contract)
+Verification submitted successfully. Waiting for result...
+Verification complete. Result: Pass - Verified
+True
+```
