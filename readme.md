@@ -169,9 +169,23 @@ Transaction sent: 0x466a3dcefcefc8160da2b57cb72b850705e0c8b99fb2c58da0ac02e5770c
 Congrats! You have flipped a flashloan. Check it out! https://goerli.etherscan.io/tx/0x466a3dcefcefc8160da2b57cb72b850705e0c8b99fb2c58da0ac02e5770c368b
 ```
 
+## Publish and Verify Contract on Etherscan
+
+Brownie has a simple way to quickly instantly verify your contract on etherscan. Run the following command.
+
+```python
+>>> contract = RushFlashLoan.at("0x9db7BcB878E9b3eFDf8FAfcfbbF11a54d80f089c")
+>>> contract
+<RushFlashLoan Contract '0x9db7BcB878E9b3eFDf8FAfcfbbF11a54d80f089c'>
+>>> RushFlashLoan.publish_source(contract)
+Verification submitted successfully. Waiting for result...
+Verification complete. Result: Pass - Verified
+True
+```
+
 ## Trasaction breakdown
 
-Here is the code breakdown for the flashloan contract I just submitted.
+Here the flashloan contract is requesting 1M from the pool provider.
 
 ```python
 from brownie import accounts, config, network, interface, RushSimpleFlashLoan
@@ -199,20 +213,6 @@ def run_flashloan():
 | :warning: WARNING   |
 |:--------------------|
 | I should warn you. You will not make any profits from using flashloans in the current state on this repo.
-
-## Publish and Verify Contract on Etherscan
-
-Brownie has a simple way to quickly instantly verify your contract on etherscan. Run the following command.
-
-```python
->>> contract = RushFlashLoan.at("0x9db7BcB878E9b3eFDf8FAfcfbbF11a54d80f089c")
->>> contract
-<RushFlashLoan Contract '0x9db7BcB878E9b3eFDf8FAfcfbbF11a54d80f089c'>
->>> RushFlashLoan.publish_source(contract)
-Verification submitted successfully. Waiting for result...
-Verification complete. Result: Pass - Verified
-True
-```
 
 ## Gif Video
 
