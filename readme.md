@@ -212,6 +212,7 @@ flashloan_receiver = RushSimpleFlashLoan[len(RushSimpleFlashLoan) -1]
 usdc = get_token("USDC")
 usdc_amount = 1_000_000 * 10** usdc.decimals()
 
+
 def run_flashloan():
     dev = get_account()
     receiver = flashloan_receiver.address
