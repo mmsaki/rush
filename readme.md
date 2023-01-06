@@ -1,9 +1,8 @@
-
 # ▦Rush ⤽ ⤼ Flashloan Rush
 
 ![Rush](./images/rush_flashloans/rush_flashloans.002.jpeg)
 
-## ▨Category for ETHOnline 2022
+## Category for ETHOnline 2022
 
 ### **Decentralized Finance (Defi)**
 
@@ -17,9 +16,7 @@ Rush ⤽ 🎠 ⤼ `0` debt
 
 **Rush** makes it easy for Defi users to borrow from Aave's **lending pool** but remain with `0` debt allowing you to possibly stay forever **debt free**. Later we will add our flashloan strategis to **Yearn Vaults** as a strategy to boost yields.
 
-## ▨Long Description
-
-**Rush** provides you with python scripts that interacts with **Aave v3 Core lending pool** to borrow assets using **flashloan contracts**. Defi users can rely on simple tools to borrow crypto assets. Sometimes borrowing assets can be a financial burden to you. When you **borrow assets** traditionally you are at risk of a forced **liquiditation** to pay off outstanding debt when the maket movements are against you. This will lead to **max losses** on your porfolio. Rush Flashloans provides an efficient way to benefit from your current borrowing positions. If you supplied **collateral** on Aave, then flahloans might benefit you. We want all the Defi users without any technical backgrounds to learn how to use flashloans without complications. We want to ensure Rush provides **secure contracts** to flashloan with Aave lending pools. Flashloans allow users to **stay debt free**. You only have to pay a **flashloan premium fee** currently at `0.09%`.
+With this project, my goal is to provide you with a forex tool to help you maximize your borrowing power and debt positions. If you have provided collateral on Aave before, this might be of great use to you. All DeFi users, with or without technical backgrounds, can learn how to use flashloans without any complications. We want to ensure our forex tool provides secure interactions with Aave's lending pools using flashloan receiver smart contracts. You only have to pay a flashloan premium fee, currently at 0.09%.
 
 | :warning: WARNING          |
 |:---------------------------|
@@ -99,7 +96,7 @@ index    Token Name          balance               address
 5        variableDebtUSDT    0                     0x45c3965f6FAbf2fB04e3FE019853813B2B7cC3A3    
 6        variableDebtWBTC    0                     0x480B8b39d1465b8049fbf03b8E0a072Ab7C9A422    
 7        variableDebtWETH    206270138356159747    0x2b848bA14583fA79519Ee71E7038D0d1061cd0F1    
- 
+
 ```
 
 If you set up your .env you should see this from your terminal.
@@ -116,8 +113,7 @@ brownie run scripts/aave/deploy_flashloan.py
 
 Ouput:
 
-```Brownie v1.19.1 - Python development framework for Ethereum
-
+```bash
 RushProject is the active project.
 
 Running 'scripts/aave/deploy_flashloan.py::main'...
