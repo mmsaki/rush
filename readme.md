@@ -1,28 +1,4 @@
-# ▦Rush ⤽ ⤼ Flashloan Rush
-
-![Rush](./images/rush_flashloans/rush_flashloans.002.jpeg)
-
-## Category for ETHOnline 2022
-
-### **Decentralized Finance (Defi)**
-
-Rush ⤽ 🎠 ⤼ `0` debt
-
-## ▨GitHub Repository
-
-[**Rush Flashloans**](https://github.com/mmsaki/rush)
-
-## ▨Short Description
-
-**Rush** makes it easy for Defi users to borrow from Aave's **lending pool** but remain with `0` debt allowing you to possibly stay forever **debt free**. Later we will add our flashloan strategis to **Yearn Vaults** as a strategy to boost yields.
-
-With this project, my goal is to provide you with a forex tool to help you maximize your borrowing power and debt positions. If you have provided collateral on Aave before, this might be of great use to you. All DeFi users, with or without technical backgrounds, can learn how to use flashloans without any complications. We want to ensure our forex tool provides secure interactions with Aave's lending pools using flashloan receiver smart contracts. You only have to pay a flashloan premium fee, currently at 0.09%.
-
-| :warning: WARNING          |
-|:---------------------------|
-| I should warn you. You will not make any profits from using flashloans as they are on this repo.      |
-
-## Getting Started
+# Getting Started
 
 First rename the `.env.example` file in this directory to `.env`. Replace the API keys as needed.
 
@@ -42,7 +18,7 @@ brownie run scripts/aave/aave_balances.py
 
 Output:
 
-```bash
+```python
 Brownie v1.19.1 - Python development framework for Ethereum
 
 RushProject is the active project.
@@ -113,7 +89,7 @@ brownie run scripts/aave/deploy_flashloan.py
 
 Ouput:
 
-```bash
+```python
 RushProject is the active project.
 
 Running 'scripts/aave/deploy_flashloan.py::main'...
@@ -180,7 +156,7 @@ brownie run scripts/aave/simple_flashloan.py
 
 Output:
 
-```bash
+```python
 Brownie v1.19.1 - Python development framework for Ethereum
 
 RushProject is the active project.
@@ -197,7 +173,7 @@ Congrats! You have flipped a flashloan. Check it out! https://goerli.etherscan.i
 
 Here is the code breakdown for the flashloan contract I just submitted.
 
-```bpython
+```python
 from brownie import accounts, config, network, interface, RushSimpleFlashLoan
 from scripts.aave.helper_functions import get_address_provider, get_token, get_account
 
@@ -219,3 +195,7 @@ def run_flashloan():
     referral = 0
     tx = pool.flashLoanSimple(receiver, assets, amount, params, referral, {"from": dev})
 ```
+
+| :warning: WARNING   |
+|:--------------------|
+| I should warn you. You will not make any profits from using flashloans in the current state on this repo.
