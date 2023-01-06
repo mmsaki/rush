@@ -213,3 +213,7 @@ Verification submitted successfully. Waiting for result...
 Verification complete. Result: Pass - Verified
 True
 ```
+
+## Gif Video
+
+![Video showing deployment scripts](./images/flippa-loans.gif)
