@@ -146,7 +146,7 @@ Gas Used: 397895 / 437684 (90.9%)
 
 ## Sending flashloan transaction
 
-After you deploy your contract, you area ready to sebmit flashloan transactions. Here's an example:
+After you deploy your contracts, you are ready to submit transactions. The flashloan contracts will receive and repay your loan. Here's an example:
 
 Run command on terminal.
 
