@@ -1,9 +1,11 @@
 from brownie import RushFlashLoan, RushSimpleFlashLoan
 from scripts.aave.helper_functions import get_account, get_address_provider
 
+
 def ascii_art():
 
-    print("""       
+    print(
+        """       
      ___           ___   ____    ____  _______ 
     /   \         /   \  \   \  /   / |   ____|
    /  ^  \       /  ^  \  \   \/   /  |  |__   
@@ -21,10 +23,13 @@ def ascii_art():
 |_|_|_| /__/\__,_||_\_\ |_| 
                             
 
-    """)
+    """
+    )
+
 
 address_provider = get_address_provider()
 tx_url = "https://goerli.etherscan.io/address/{}"
+
 
 def simple_flashloan():
     dev = get_account()
@@ -34,6 +39,7 @@ def simple_flashloan():
     print(f"View contract on Optimism Goerli: {tx_url.format(flashloan.address)}")
     return flashloan.tx.info()
 
+
 def flashloan_multi():
     dev = get_account()
     print(f"""Deploying Rush flashloan receiver contract ...""")
@@ -42,9 +48,8 @@ def flashloan_multi():
     print(f"View contract on Optimism Goerli: {tx_url.format(flashloan.address)}")
     return flashloan.tx.info()
 
+
 def main():
     flashloan_multi()
     simple_flashloan()
     ascii_art()
-
-

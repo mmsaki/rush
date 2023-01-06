@@ -9,7 +9,7 @@ def repay_token(_token, amount):
     print(f"Approving ERC20 token to spender address {lending_pool} ...")
     approval_tx = token.approve(lending_pool, amount, {"from": dev})
     approval_tx.wait(1)
-    
+
     print(f"Now repaying loan using of {token} with amount {amount} Wei.")
-    tx = lending_pool.repay(token.address, amount, 2, dev, {'from': dev})
+    tx = lending_pool.repay(token.address, amount, 2, dev, {"from": dev})
     return tx.info()

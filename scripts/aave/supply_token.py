@@ -1,5 +1,10 @@
 from brownie import config, accounts, interface, network
-from scripts.aave.helper_functions import get_address_provider, get_token, get_account, get_lending_pool
+from scripts.aave.helper_functions import (
+    get_address_provider,
+    get_token,
+    get_account,
+    get_lending_pool,
+)
 
 amount = 1001490533000000000000000
 token_name = "SUSD"
@@ -13,6 +18,7 @@ def supply_token():
     approval_tx = token.approve(pool, amount, {"from": dev})
     tx = pool.supply(token, amount, dev, 0, {"from": dev})
     return tx
+
 
 # Accepts token name as string
 def main():
