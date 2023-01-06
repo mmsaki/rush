@@ -81,7 +81,7 @@ If you set up your .env you should see this from your terminal.
 
 Keep in mind that all the scripts you will be running for this demo are found in [/scripts/aave](./scripts/aave/) directory. Read through them to see what they are doing.
 
-This scripts deploy a simple flashloan contract that will only flashloan on token at a time.
+The following script will deploy a two flashloan contracts. One will be used to flashloan one token at a time [SimpleFlashLoan](./contracts/rush/flashloan/RushSimpleFlashLoan.sol), the other will be used to combine multiple tokens in one flashloan transaction [FlashLoan](./contracts/rush/flashloan/RushFlashLoan.sol).
 
 ```bash
 brownie run scripts/aave/deploy_flashloan.py
