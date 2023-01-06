@@ -16,5 +16,5 @@ reports/
 *.husky/
 vaults/node_modules/
 .ipynb_checkpoints/
-rush_flashloan.key
-rush_flashloan.pdf
+rush_flashloans.key
+rush_flashloans.pdf
