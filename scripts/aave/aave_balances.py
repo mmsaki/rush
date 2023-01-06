@@ -1,5 +1,5 @@
 from brownie import interface
-from scripts.aave.helper_functions import get_lending_pool, get_accounts, get_account, get_stable_token, get_variable_token, get_atoken, get_token
+from scripts.aave.helper_functions import get_lending_pool, get_account, get_stable_token, get_variable_token, get_atoken, get_token
 
 
 def pretty_table(rows, column_count, column_spacing=4):
@@ -16,10 +16,10 @@ def get_erc20_tokens():
     print(f"{'    ' * 20}")
     print(f"     Tokens in Account   ")
     print(f"{'=====' * 20}")
-    dev = get_accounts(0)
+    dev = get_account()
     pool = get_lending_pool()
     rows = [['index', 'Token Name', 'balance', 'address']]
-    tokens = ["AAVE", "DAI", "LINK", "SUSD", "USDC", "USDT", "WETH", "WBTC"]
+    tokens = ["AAVE", "DAI", "LINK", "EURS", "USDC", "USDT", "WETH", "WBTC"] 
 
     for n in range (0, len(tokens)):
         token_name = tokens[n]
@@ -33,10 +33,10 @@ def get_atokens():
     print(f"{'    ' * 20}")
     print(f"     Interest aTokens in Account  ")
     print(f"{'=====' * 20}")
-    dev = get_accounts(0)
+    dev = get_account()
     pool = get_lending_pool()
     rows = [['index', 'Token Name', 'balance', 'address']]
-    atokens = ["aAAVE", "aDAI", "aLINK", "aSUSD", "aUSDC", "aUSDT", "aWETH", "aWBTC"]
+    atokens = ["aAAVE", "aDAI", "aLINK", "aEURS", "aUSDC", "aUSDT", "aWETH", "aWBTC"]
     
     for n in range (0, len(atokens)):
         token_name = atokens[n]
@@ -50,14 +50,14 @@ def get_stable_tokens():
     print(f"{'    ' * 20}")
     print(f"     Stable Debt Tokens in Account  ")
     print(f"{'=====' * 20}")
-    dev = get_accounts(0)
+    dev = get_account()
     pool = get_lending_pool()
     rows = [['index', 'Token Name', 'balance', 'address']]
     stable_tokens = [
         "stableDebtAAVE", 
         "stableDebtDAI", 
         "stableDebtLINK",
-        "stableDebtSUSD", 
+        "stableDebtEURS", 
         "stableDebtUSDC", 
         "stableDebtUSDT", 
         "stableDebtWBTC", 
@@ -76,14 +76,14 @@ def get_variable_tokens():
     print(f"{'    ' * 20}")
     print(f"     Variable Debt Tokens in Account  ")
     print(f"{'=====' * 20}")
-    dev = get_accounts(0)
+    dev = get_account()
     pool = get_lending_pool()
     rows = [['index', 'Token Name', 'balance', 'address']]
     variable_tokens = [
         "variableDebtAAVE", 
         "variableDebtDAI", 
         "variableDebtLINK",
-        "variableDebtSUSD", 
+        "variableDebtEURS", 
         "variableDebtUSDC", 
         "variableDebtUSDT", 
         "variableDebtWBTC", 
