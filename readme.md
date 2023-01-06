@@ -2,11 +2,13 @@
 
 First rename the `.env.example` file in this directory to `.env`. Replace the API keys as needed.
 
-After adding your api keys run the following command on your terminal. this allows you environment variables to be accessed by brownie networks.
+After adding your api keys, run the following command from your terminal.
 
 ```bash
 source .env
 ```
+
+This command allows brownie config to access your environment variables.
 
 ## Scripts to AAVE Token balances
 
