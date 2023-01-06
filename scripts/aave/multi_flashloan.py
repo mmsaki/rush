@@ -11,7 +11,7 @@ flashloan_receiver = RushFlashLoan[len(RushFlashLoan) - 1]
 dai = get_token("DAI")
 usdc = get_token("USDC")
 usdt = get_token("USDT")
-susd = get_token("SUSD")
+eurs = get_token("EURS")
 weth = get_token("WETH")
 wbtc = get_token("WBTC")
 aave = get_token("AAVE")
@@ -20,7 +20,7 @@ link = get_token("LINK")
 dai_amount = 60000000 * 10 ** dai.decimals()
 usdc_amount = 10000000 * 10 ** usdc.decimals()
 usdt_amount = 10000000 * 10 ** usdt.decimals()
-susd_amount = 300000 * 10 ** susd.decimals()
+eurs_amount = 300000 * 10 ** eurs.decimals()
 weth_amount = 10 * 10 ** weth.decimals()
 wbtc_amount = 20000 * 10 ** wbtc.decimals()
 aave_amount = 1000000 * 10 ** aave.decimals()
@@ -30,12 +30,12 @@ link_amount = 1000000 * 10 ** link.decimals()
 def run_flashloan():
     dev = get_account()
     receiver = flashloan_receiver
-    assets = [dai, usdc, usdt, susd, weth, wbtc, aave, link]
+    assets = [dai, usdc, usdt, eurs, weth, wbtc, aave, link]
     amounts = [
         dai_amount,
         usdc_amount,
         usdt_amount,
-        susd_amount,
+        eurs_amount,
         weth_amount,
         wbtc_amount,
         aave_amount,
