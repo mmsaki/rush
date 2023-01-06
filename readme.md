@@ -215,7 +215,3 @@ def run_flashloan():
 | :warning: WARNING   |
 |:--------------------|
 | I should warn you. You will not make any profits from using flashloans in the current state on this repo.
-
-## Gif Video
-
-![Video showing deployment scripts](./images/flippa-loans.gif)
