@@ -18,3 +18,4 @@ vaults/node_modules/
 .ipynb_checkpoints/
 rush_flashloans.key
 rush_flashloans.pdf
+.vscode/
