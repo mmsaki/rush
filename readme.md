@@ -92,61 +92,30 @@ brownie run scripts/aave/deploy_flashloan.py
 Ouput:
 
 ```python
+Brownie v1.19.1 - Python development framework for Ethereum
+
 RushProject is the active project.
 
 Running 'scripts/aave/deploy_flashloan.py::main'...
-Deploying Rush flashloan receiver contract ...
-===============================================
-Transaction sent: 0x10ca1b6c6286d141dded7e21d17dc392a120778d5c7b23fd51f4431e2a289c98
-  Gas price: 5.733639427 gwei   Gas limit: 626919   Nonce: 76
-  RushFlashLoan.constructor confirmed   Block: 8265347   Gas used: 569927 (90.91%)
-  RushFlashLoan deployed at: 0x9db7BcB878E9b3eFDf8FAfcfbbF11a54d80f089c
-
-View contract on Optimism Goerli: https://goerli.etherscan.io/address/0x9db7BcB878E9b3eFDf8FAfcfbbF11a54d80f089c
-Transaction was Mined 
----------------------
-Tx Hash: 0x10ca1b6c6286d141dded7e21d17dc392a120778d5c7b23fd51f4431e2a289c98
-From: 0xFE948CB2122FDD87bAf43dCe8aFa254B1242c199
-New RushFlashLoan address: 0x9db7BcB878E9b3eFDf8FAfcfbbF11a54d80f089c
-Block: 8265347
-Gas Used: 569927 / 626919 (90.9%)
-
 Deploying Simple Rush flashloan receiver contract ...
 ===============================================
-Transaction sent: 0x32ab837f8413fa05c927df8d37a9129dc7bfe439cf84377b446f99e3691767f2
-  Gas price: 5.720037097 gwei   Gas limit: 437684   Nonce: 77
-  RushSimpleFlashLoan.constructor confirmed   Block: 8265348   Gas used: 397895 (90.91%)
-  RushSimpleFlashLoan deployed at: 0xA2C4ab618Ad699372D067473D57cbb8371E61Cb4
+Transaction sent: 0x0a39f260819c1e3a9d71010ccc64ba9bddc4f2d677d0d94b67c5fac9939cb520
+  Gas price: 36.756769064 gwei   Gas limit: 541641   Nonce: 90
+  FlashLoan.constructor confirmed   Block: 8282174   Gas used: 492401 (90.91%)
+  FlashLoan deployed at: 0xD86bF68ADaf5C6389F1e7379700B01217f3f8129
 
-View contract on Optimism Goerli: https://goerli.etherscan.io/address/0xA2C4ab618Ad699372D067473D57cbb8371E61Cb4
+View contract on Optimism Goerli: https://goerli.etherscan.io/address/0xD86bF68ADaf5C6389F1e7379700B01217f3f8129
 Transaction was Mined 
 ---------------------
-Tx Hash: 0x32ab837f8413fa05c927df8d37a9129dc7bfe439cf84377b446f99e3691767f2
+Tx Hash: 0x0a39f260819c1e3a9d71010ccc64ba9bddc4f2d677d0d94b67c5fac9939cb520
 From: 0xFE948CB2122FDD87bAf43dCe8aFa254B1242c199
-New RushSimpleFlashLoan address: 0xA2C4ab618Ad699372D067473D57cbb8371E61Cb4
-Block: 8265348
-Gas Used: 397895 / 437684 (90.9%)
-
-       
-     ___           ___   ____    ____  _______ 
-    /   \         /   \  \   \  /   / |   ____|
-   /  ^  \       /  ^  \  \   \/   /  |  |__   
-  /  /_\  \     /  /_\  \  \      /   |   __|  
- /  _____  \   /  _____  \  \    /    |  |____ 
-/__/     \__\ /__/     \__\  \__/     |_______|
-                                               
-                
-                      )     
-    )           )  ( /( (   
-   (     (   ( /(  )\()))\  
-   )\  ' )\  )(_))((_)\((_) 
- _((_)) ((_)((_)_ | |(_)(_) 
-| '  \()(_-</ _` || / / | | 
-|_|_|_| /__/\__,_||_\_\ |_| 
+New FlashLoan address: 0xD86bF68ADaf5C6389F1e7379700B01217f3f8129
+Block: 8282174
+Gas Used: 492401 / 541641 (90.9%)
                             
 ```
 
-## Sending flashloan transaction
+## Excecuting flashloan transaction
 
 After you deploy your contracts, you are ready to submit transactions. The flashloan contracts will receive and repay your loan. Here's an example:
 
@@ -164,11 +133,15 @@ Brownie v1.19.1 - Python development framework for Ethereum
 RushProject is the active project.
 
 Running 'scripts/aave/simple_flashloan.py::main'...
-Transaction sent: 0x466a3dcefcefc8160da2b57cb72b850705e0c8b99fb2c58da0ac02e5770c368b
-  Gas price: 8.81757279 gwei   Gas limit: 245586   Nonce: 82
-  Transaction confirmed   Block: 8265573   Gas used: 177590 (72.31%)
+Transaction sent: 0xe0298379f63293c6bb8ec2bfbd147684c3c73087e5ede19eb7409bcd844fcabb
+  Gas price: 33.986319221 gwei   Gas limit: 37951   Nonce: 93
+  MintableERC20.transfer confirmed   Block: 8282256   Gas used: 34501 (90.91%)
 
-Congrats! You have flipped a flashloan. Check it out! https://goerli.etherscan.io/tx/0x466a3dcefcefc8160da2b57cb72b850705e0c8b99fb2c58da0ac02e5770c368b
+Transaction sent: 0x58180124eadc669c23c0cfa28053e0c79496b48713f0f160734710ace2b92577
+  Gas price: 32.188179381 gwei   Gas limit: 209116   Nonce: 94
+  Transaction confirmed   Block: 8282267   Gas used: 165364 (79.08%)
+
+Congrats! You have flipped a flashloan. Check it out! https://goerli.etherscan.io/tx/0x58180124eadc669c23c0cfa28053e0c79496b48713f0f160734710ace2b92577
 ```
 
 ## Publish and Verify Contract on Etherscan
