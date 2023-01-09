@@ -1,4 +1,4 @@
-from brownie import RushFlashLoan, RushSimpleFlashLoan
+from brownie import FlashLoan
 from scripts.aave.helper_functions import get_account, get_address_provider
 
 
@@ -35,21 +35,20 @@ def simple_flashloan():
     dev = get_account()
     print(f"""Deploying Simple Rush flashloan receiver contract ...""")
     print(f"""===============================================""")
-    flashloan = RushSimpleFlashLoan.deploy(address_provider, {"from": dev})
+    flashloan = FlashLoan.deploy(address_provider, {"from": dev})
     print(f"View contract on Optimism Goerli: {tx_url.format(flashloan.address)}")
     return flashloan.tx.info()
 
 
-def flashloan_multi():
-    dev = get_account()
-    print(f"""Deploying Rush flashloan receiver contract ...""")
-    print(f"""===============================================""")
-    flashloan = RushFlashLoan.deploy(address_provider, {"from": dev})
-    print(f"View contract on Optimism Goerli: {tx_url.format(flashloan.address)}")
-    return flashloan.tx.info()
+# def flashloan_multi():
+#     dev = get_account()
+#     print(f"""Deploying Rush flashloan receiver contract ...""")
+#     print(f"""===============================================""")
+#     flashloan = RushFlashLoan.deploy(address_provider, {"from": dev})
+#     print(f"View contract on Optimism Goerli: {tx_url.format(flashloan.address)}")
+#     return flashloan.tx.info()
 
 
 def main():
-    flashloan_multi()
     simple_flashloan()
-    ascii_art()
+    # ascii_art()

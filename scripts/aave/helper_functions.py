@@ -17,7 +17,7 @@ def get_weth(token_name):
 
 
 def get_token(token_name):
-    token = interface.IERC20Detailed(
+    token = interface.IERC20(
         config["networks"][network.show_active()][token_name]
     )
     return token
