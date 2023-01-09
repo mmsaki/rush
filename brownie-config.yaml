@@ -1,28 +1,30 @@
 dependencies:
-    - OpenZeppelin/openzeppelin-contracts@3.1.0
     - OpenZeppelin/openzeppelin-contracts@4.7.3
     - aave/aave-v3-core@1.16.2
+    - Uniswap/v3-core@1.0.0
+    - curvefi/curve-dao-contracts@1.3.0
 
 compiler:
     evm_version: null
     solc:
-        version: null
+        version: 0.8.10
         optimizer:
             enabled: true
             runs: 200
         remappings:
-            - "@openzeppelin=OpenZeppelin/openzeppelin-contracts@4.7.3"
-            - "@openzeppelin_3_1_0=OpenZeppelin/openzeppelin-contracts@3.1.0"
+            - "@openzeppelin=OpenZeppelin/openzeppelin-contracts@4.7.3/"
             - "@aave=aave/aave-v3-core@1.16.2/"
+            - "@uniswap=Uniswap/v3-core@1.0.0/"
+            - "@curve=curvefi/curve-dao-contracts@1.3.0/"
     vyper:
         version: null
 
-console:
-    show_colors: true
-    color_style: monokai
-    auto_suggest: true
-    completions: true
-    editing_mode: emacs
+# console:
+#     show_colors: true
+#     color_style: monokai
+#     auto_suggest: true
+#     completions: true
+#     editing_mode: emacs
 
 networks:
     default: goerli
