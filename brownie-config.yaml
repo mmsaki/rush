@@ -27,7 +27,61 @@ compiler:
 #     editing_mode: emacs
 
 networks:
-    default: goerli
+    default: mainnet
+    mainnet:
+        # Paraswap Limit Order https://developers.paraswap.network/api/limit-orders/contracts
+        AugustusRFQ: "0xe92b586627ccA7a83dC919cc7127196d70f55a06"
+        UniswapV3Factory: "0x1F98431c8aD98523631AE4a59f267346ea31F984"
+        Multicall2: "0x5BA1e12693Dc8F9c48aAD8770482f4739bEeD696"
+        UniswapV3Router2: "0x68b3465833fb72A70ecDF485E0e4C7bD8665Fc45" 
+        WETH: "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+        ETH: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE"
+
+        # Chainlink Price feeds. AggregatorV3Interface
+        ETH-USD: "0x5f4ec3df9cbd43714fe2740f5e3616155c5b8419"
+        BTC-USD: "0xf4030086522a5beea4988f8ca5b36dbc97bee88c"
+        LINK-USD: "0x2c1d072e956affc0d435cb7ac38ef18d24d9127c" 
+        BNB-USD: "0x14e613ac84a31f709eadbdf89c6cc390fdc9540a"
+        AAVE-USD: "0x547a514d5e3769680ce22b2361c10ea13619e8a9"
+        UNI-USD: "0x553303d460ee0afb37edff9be42922d8ff63220e"
+        MATIC-USD: "0x7bac85a8a13a4bcd8abb3eb7d6b4d632c5a57676"
+        DOT-USD: "0x1c07afb8e2b827c5a4739c6d59ae3a5035f28734"
+        YFI-USD: "0xa027702dbb89fbd58938e4324ac03b58d812b0e1"
+        COMP-USD: "0xdbd020caef83efd542f4de03e3cf0c28a4428bd5"
+        DOGE-USD: "0x2465cefd3b488be410b941b1d4b2767088e2a028"
+        MKR-USD: "0xec1d1b3b0443256cc3860e24a46f108e699484aa"
+        SNX-USD: "0xdc3ea94cd0ac27d9a86c180091e7f78c683d3699"
+        SUSHI-USD: "0xcc70f09a6cc17553b2e31954cd36e4a2d89501f7"
+        1INCH-USD: "0xc929ad75b72593967de83e7f7cda0493458261d9"
+        ADA-USD: "0xae48c91df1fe419994ffda27da09d5ac69c30f55"
+        CRV-USD: "0xcd627aa160a6fa45eb793d19ef54f5062f20f33f"
+        SOL-USD: "0x4ffc43a60e009b551865a93d232e33fce9f01507"
+        BCH-USD: "0x9f0f69428f923d6c95b781f89e165c9b2df9789d"
+        AVAX-USD: "0xff3eeb22b5e3de6e705b44749c2559d704923fd7"
+        FXS-USD: "0x6ebc52c8c1089be9eb3945c4350b68b8e4c2233f"
+        BCH-USD: "0x9f0f69428f923d6c95b781f89e165c9b2df9789d"
+        XRP-USD: "0xced2660c6dd1ffd856a5a82c67f3482d88c50b12"
+        BNT-USD: "0x1e6cf0d433de4fe882a437abc654f58e1e78548c"
+        BAL-USD: "0xdf2917806e30300537aeb49a7663062f4d1f2b5f"
+        # monero
+        XMR-USD: "0xfa66458cce7dd15d8650015c4fce4d278271618f"
+        MANA-USD: "0x56a4857acbcfe3a66965c251628b1c9f1c408c19"
+
+        
+    optimism:
+        # Paraswap Limit Order
+        AugustusRFQ: "0x0927FD43a7a87E3E8b81Df2c44B03C4756849F6D"
+        WETH: "0x4200000000000000000000000000000000000006"
+    arbitrum:
+        # Paraswap limit order
+        AugustusRFQ: "0x0927FD43a7a87E3E8b81Df2c44B03C4756849F6D"
+        WETH: "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1"
+    Avalance:
+        # Paraswap limit order
+        AugustusRFQ: "0x34302c4267d0dA0A8c65510282Cc22E9e39df51f"
+    binance:
+        # Paraswap limit order
+        AugustusRFQ: "0x8dcdfe88ef0351f27437284d0710cd65b20288bb"
     polygon:
         verify: True
         APWToken: "0x6C0AB120dBd11BA701AFF6748568311668F63FE0"
