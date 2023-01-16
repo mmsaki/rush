@@ -17,7 +17,7 @@ import { Address } from "@openzeppelin/contracts/utils/Address.sol";
 import { SafeERC20 } from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 
 // Import interfaces for many popular DeFi projects, or add your own!
-import {IPool} from "../interfaces/IPool.sol";
+import {IPool} from "@aave/contracts/interfaces/IPool.sol";
 
 contract Strategy is BaseStrategy {
     using SafeERC20 for IERC20;

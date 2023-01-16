@@ -6,7 +6,7 @@ import {IERC20} from "@aave/contracts/dependencies/openzeppelin/contracts/IERC20
 import {FlashLoanSimpleReceiverBase} from "@aave/contracts/flashloan/base/FlashLoanSimpleReceiverBase.sol";
 import {IPoolAddressesProvider} from "@aave/contracts/interfaces/IPoolAddressesProvider.sol";
 import {SafeMath} from "@aave/contracts/dependencies/openzeppelin/contracts/SafeMath.sol";
-import {IUniswapV3Factory} from "@uniswap/contracts/interfaces/IUniswapV3Factory.sol";
+import {IUniswapV3Factory} from "@uniswap/v3-core/contracts/interfaces/IUniswapV3Factory.sol";
 
 
 contract FlashLoan is FlashLoanSimpleReceiverBase {

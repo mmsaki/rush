@@ -1,20 +1,25 @@
 dependencies:
     - OpenZeppelin/openzeppelin-contracts@4.7.3
     - aave/aave-v3-core@1.16.2
-    - Uniswap/v3-core@1.0.0
     - curvefi/curve-dao-contracts@1.3.0
+    - Uniswap/v3-core@1.0.0
+    - Uniswap/v3-periphery@1.3.0
+    - aave/protocol-v2@1.0.1
+    - OpenZeppelin/openzeppelin-contracts@3.4.2-solc-0.7
 
 compiler:
     evm_version: null
     solc:
-        version: 0.8.10
+        version: null
         optimizer:
             enabled: true
             runs: 200
         remappings:
-            - "@openzeppelin=OpenZeppelin/openzeppelin-contracts@4.7.3/"
+            - "@openzeppelin=OpenZeppelin/openzeppelin-contracts@3.4.2-solc-0.7"
             - "@aave=aave/aave-v3-core@1.16.2/"
-            - "@uniswap=Uniswap/v3-core@1.0.0/"
+            - "@aave-protocolV2=aave/protocol-v2@1.0.1"
+            - "@uniswap/v3-core=Uniswap/v3-core@1.0.0/"
+            - "@uniswap/v3-periphery=Uniswap/v3-periphery@1.3.0/"
             - "@curve=curvefi/curve-dao-contracts@1.3.0/"
     vyper:
         version: null
@@ -27,15 +32,52 @@ compiler:
 #     editing_mode: emacs
 
 networks:
-    default: mainnet
+    default: development
     mainnet:
         # Paraswap Limit Order https://developers.paraswap.network/api/limit-orders/contracts
         AugustusRFQ: "0xe92b586627ccA7a83dC919cc7127196d70f55a06"
         UniswapV3Factory: "0x1F98431c8aD98523631AE4a59f267346ea31F984"
         Multicall2: "0x5BA1e12693Dc8F9c48aAD8770482f4739bEeD696"
         UniswapV3Router2: "0x68b3465833fb72A70ecDF485E0e4C7bD8665Fc45" 
+        SwapRouter: "0xE592427A0AEce92De3Edee1F18E0157C05861564"
+        Quoter: "0xb27308f9F90D607463bb33eA1BeBb41C27CE5AB6"
+        NonfungiblePositionManager: "0xC36442b4a4522E871399CD717aBDD847Ab11FE88"
+        UniswapV3Staker: "0xe34139463bA50bD61336E0c446Bd8C0867c6fE65"
+        NFTDescriptor: "0x42B24A95702b9986e82d421cC3568932790A48Ec"
+        NonfungibleTokenPositionDescriptor: "0x91ae842A5Ffd8d12023116943e72A606179294f3"
+
+        # Token Address
         WETH: "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
         ETH: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE"
+        USDC: "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
+        USDT: "0xdAC17F958D2ee523a2206206994597C13D831ec7"
+        WBTC: "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599"
+        DAI: "0x6B175474E89094C44Da98b954EedeAC495271d0F"
+        LDO: "0x5A98FcBEA516Cf06857215779Fd812CA3beF1B32"
+        APE: "0x4d224452801ACEd8B2F0aebE155379bb5D594381"
+        LINK: "0x514910771AF9Ca656af840dff83E8264EcF986CA"
+        UNI: "0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984"
+        FRAX: "0x853d955aCEf822Db058eb8505911ED77F175b99e"
+        # Conbase wrapped staked eth
+        CBETH: "0xBe9895146f7AF43049ca1c1AE358B0541Ea49704"
+        AAVE: "0x7Fc66500c84A76Ad7e9c93437bFc5Ac33E2DDaE9"
+        HEX: "0x2b591e99afE9f32eAA6214f7B7629768c40Eeb39"
+        LUSD: "0x5f98805A4E8be255a32880FDeC7F6728C6568bA0"
+        MATIC: "0x7D1AfA7B718fb893dB30A3aBc0Cfc608AaCfeBB0"
+        GALA: "0x15D4c048F83bd7e37d49eA4C83a07267Ec4203dA"
+        1INCH: "0x111111111117dC0aa78b770fA6A738034120C302"
+        CRV: "0xD533a949740bb3306d119CC777fa900bA034cd52"
+        MKR: "0x9f8F72aA9304c8B593d555F12eF6589cC3A579A2"
+        WSTETH: "0x7f39C581F595B53c5cb19bD0b3f8dA6c935E2Ca0"
+        BITDAO: "0x1A4b46696b2bB4794Eb3D4c26f1c55F9170fa4C5"
+        BUSD: "0x4Fabb145d64652a948d72533023f6E7A623C7C53"
+        FTM: "0x4E15361FD6b4BB609Fa63C81A2be19d873717870"
+        QNT: "0x4a220E6096B25EADb88358cb44068A3248254675"
+        ENS: "0xC18360217D8F7Ab5e7c516566761Ea12Ce7F9D72"
+        DYDX: "0x92D6C1e31e14520e676a687F0a93788B716BEff5"
+        RETH: "0xae78736Cd615f374D3085123A210448E74Fc6393"
+        WSOL: "0xD31a59c85aE9D8edEFeC411D448f90841571b89c"
+        
 
         # Chainlink Price feeds. AggregatorV3Interface
         ETH-USD: "0x5f4ec3df9cbd43714fe2740f5e3616155c5b8419"

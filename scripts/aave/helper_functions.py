@@ -12,7 +12,7 @@ def get_accounts(i):
 
 
 def get_weth(token_name):
-    token = interface.IWETH(config["networks"][network.show_active()][token_name])
+    token = interface.IWETH9(config["networks"][network.show_active()][token_name])
     return token
 
 
