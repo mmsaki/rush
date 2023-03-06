@@ -115,9 +115,9 @@ Gas Used: 492401 / 541641 (90.9%)
 
 ```
 
-## Excecuting $1,000,000 USDC flashloan transaction
+## Excecuting 1M USDC flashloan transaction
 
-Checout out [this transaction](https://goerli.etherscan.io/tx/0x58180124eadc669c23c0cfa28053e0c79496b48713f0f160734710ace2b92577) flashloaning $1,000,000.
+Checout out [this transaction](https://goerli.etherscan.io/tx/0x58180124eadc669c23c0cfa28053e0c79496b48713f0f160734710ace2b92577).
 After you deploy your contracts, you are ready to submit transactions. The flashloan contracts will receive and repay your loan. Here's an example:
 
 Run command on terminal.
@@ -186,7 +186,7 @@ def run_flashloan():
     tx = pool.flashLoanSimple(receiver, assets, amount, params, referral, {"from": dev})
 ```
 
-## Multi Token Flashloans > $200 million
+## Multi Token Flashloans
 
 If you run this command, you can flashloan over 100M+ in tokens. Checkout [this transaction](https://goerli.etherscan.io/tx/0x310974980351e66748421d1ef01b3d940202090525a99630e03150cb9aeae859).
 
